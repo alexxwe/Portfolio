@@ -6,7 +6,7 @@
 
 <Header/>
 
-<main class="bg-zinc-700 text-white">
+<main class="bg-zinc-800 text-white font-mono">
     <slot />
 </main>
 
