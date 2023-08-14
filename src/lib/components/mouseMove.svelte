@@ -1,5 +1,7 @@
 <script lang="ts">
-    import alex from '../components/public/assets/image/alex.jpg'
+    import alex1 from '../components/public/assets/image/finalalex1.png'
+    import alex2 from '../components/public/assets/image/Finalmilano2.png'
+
     import { onMount } from 'svelte'
 
     interface SvelteMouseEvent {
@@ -39,31 +41,34 @@
 </script>
 
 <!-- <div class="flex min-h-screen items-center justify-center overflow-hidden"> -->
-<div class="flex items-center justify-center">
+<div class="flex items-center justify-center mt-20">
     <div bind:this={cards} class="cards">
         <h1 class="text-3xl font-semibold text-indigo-700">Alejandro</h1>
         <h3 class="text-lg text-red-600">Paz Ferreirós</h3>
+        <!-- src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_mono.png" -->
         <div class="card">
             <div class="card_bg_one" />
-            <img class="card_img_one" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_mono.png" alt="" />
+            <img class="card_img_one" src={alex1} alt="" />
             <div class="card_text">
-                <p class="card_title">Princess Mononoke</p>
+                <p class="card_title">Germany</p>
             </div>
         </div>
 
+        <!-- src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_chihiro.png -->
         <div class="card">
             <div class="card_bg_two" />
-            <img class="card_img_two" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_chihiro.png" alt="" />
+            <img class="card_img_two" src={alex2} alt="" />
             <div class="card_text">
-                <p class="card_title">Spirited Away</p>
+                <p class="card_title">Milano</p>
             </div>
         </div>
 
+        <!-- src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_howlcastle.png" -->
         <div class="card">
             <div class="card_bg_three" />
-            <img class="card_img_three" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_howlcastle.png" alt="" />
+            <img class="card_img_three" src={alex1} alt="" />
             <div class="card_text">
-                <p class="card_title">Howl's Moving Castle</p>
+                <p class="card_title">Prague</p>
             </div>
         </div>
     </div>
@@ -102,7 +107,7 @@
 
     .card {
         border-radius: 15px;
-        cursor: pointer;
+        /* cursor: pointer; */
         display: inline-block;
         height: 250px;
         overflow: hidden;
@@ -143,14 +148,19 @@
         height: 110%;
     }
     .card_bg_one {
-        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_monobg.jpg') center / cover no-repeat;
+        /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_monobg.jpg') center / cover no-repeat; */
+        background: url('../components/public/assets/image/alemaniaPraga.jpg') center / cover no-repeat;
+        filter: blur(1px);
+
     }
 
     .card_img_two {
         top: 25px;
     }
     .card_bg_two {
-        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_spirited.jpg') center / cover no-repeat;
+        /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_spirited.jpg') center / cover no-repeat; */
+        background: url('../components/public/assets/image/Finalmilano3.jpg') center / cover no-repeat;
+        filter: blur(1px);
     }
 
     .card_img_three {
@@ -159,7 +169,10 @@
         height: 110%;
     }
     .card_bg_three {
-        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_howlbg.jpg') center / cover no-repeat;
+        /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_howlbg.jpg') center / cover no-repeat; */
+        background: url('../components/public/assets/image/praga2.jpg') center / cover no-repeat;
+        filter: blur(1px);
+
     }
 
     .card_text {
