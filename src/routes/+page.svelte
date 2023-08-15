@@ -2,23 +2,28 @@
     import MouseMove from '../lib/components/mouseMove.svelte'
 
     import alex from '../lib/components/public/assets/image/alexSquare.jpg'
-    import pair_programming from '../lib/components/public/assets/svg/undraw_pair_programming_re_or4x.svg'
+    // import pair_programming from '../lib/components/public/assets/svg/undraw_pair_programming_re_or4x.svg'
     import digital_nomad from '../lib/components/public/assets/svg/undraw_digital_nomad_re_w8uy.svg'
     // import programming from '../lib/components/public/assets/svg/undraw_programming_re_kg9v.svg'
     import working from '../lib/components/public/assets/svg/undraw_working_re_ddwy.svg'
 
-    import HTML from '../lib/components/public/assets/svg/HTML.svg'
-    import CSS from '../lib/components/public/assets/svg/CSS.svg'
-    import JS from '../lib/components/public/assets/svg/javascript.svg'
-    import GIT from '../lib/components/public/assets/svg/Git.svg'
-    import TAILWINDCSS from '../lib/components/public/assets/svg/tailwindcss.svg'
-    import NPM from '../lib/components/public/assets/svg/npm.svg'
-    import SVELTE from '../lib/components/public/assets/svg/Svelte.png'
-    import VSCODE from '../lib/components/public/assets/svg/vscode.svg'
+    import HTML from '../lib/components/public/assets/imgSkills/HTML.svg'
+    import CSS from '../lib/components/public/assets/imgSkills/CSS.svg'
+    import JS from '../lib/components/public/assets/imgSkills/javascript.svg'
+    import GIT from '../lib/components/public/assets/imgSkills/Git.svg'
+    import TAILWINDCSS from '../lib/components/public/assets/imgSkills/tailwindcss.svg'
+    import NPM from '../lib/components/public/assets/imgSkills/npm.svg'
+    import SVELTE from '../lib/components/public/assets/imgSkills/Svelte.png'
+    import VSCODE from '../lib/components/public/assets/imgSkills/vscode.svg'
+    import GITHUB from '../lib/components/public/assets/imgSkills/github.svg'
+    import NODJS from '../lib/components/public/assets/imgSkills/node.webp'
+    import REACT from '../lib/components/public/assets/imgSkills/react.webp'
+    import SASS from '../lib/components/public/assets/imgSkills/sass.webp'
+    import TYPESCRIPT from '../lib/components/public/assets/imgSkills/typescript.webp'
 
     
 </script>
-
+<div class="senTop"></div>
 <div>
     <div class="grid grid-cols-3 items-center">
         <div class="p-14">
@@ -57,25 +62,27 @@
                 <i>JS</i>
             </div>
             <div class="hover:scale-125">
+                <img class="animate__animated animate__slideInDown animate__slow 250ms w-9" src={SVELTE} alt="Svelte logo" />
+                <i>Svelte</i>
+            </div>
+            <div class="hover:scale-125">
                 <img src={GIT} alt="Git logo" class="animate__animated animate__slideInDown animate__slow 250ms" />
                 <i>Git</i>
             </div>
             <div class="hover:scale-125">
-                <img src={TAILWINDCSS} alt="TailwindCSS logo" class="animate__animated animate__slideInDown animate__slow 250ms" />
+                <img src={TAILWINDCSS} alt="TailwindCSS logo" class="animate__animated animate__slideInUp animate__slow 250ms" />
                 <i>TailwindCSS</i>
             </div>
+            
             <div class="hover:scale-125">
-                <img src={NPM} alt="NPM logo" class="animate__animated animate__slideInUp animate__slow 250ms" />
+                <img src={NPM} alt="NPM logo" class="animate__animated animate__slideInRight animate__slow 250ms" />
                 <i>NPM</i>
             </div>
             <div class="hover:scale-125">
                 <img src={VSCODE} alt="VSCode logo" class="animate__animated animate__slideInRight animate__slow 250ms" />
                 <i>VSCode</i>
             </div>
-            <div class="hover:scale-125">
-                <img class="animate__animated animate__slideInRight animate__slow 250ms w-9" src={SVELTE} alt="Svelte logo" />
-                <i>Svelte</i>
-            </div>
+            
         </div>
     </div>
     <hr class="mx-auto h-0.5 rounded border-0 bg-white" />
@@ -159,14 +166,42 @@
 <MouseMove />
 
 <div class="container mx-auto mt-20 p-4">
-    <h2 class="my-4 text-center text-3xl">Team Projects</h2>
+    <h2 class="my-4 text-center text-3xl">Contact me</h2>
     <hr class="mx-auto h-1 rounded border-0 bg-white" />
     <div class="flex justify-center">
         <img src={working} alt="" />
     </div>
 </div>
-
+<div class="senBot"></div>
 <style>
+
+.senTop {
+  --size: 50px;
+  --p: 25px;
+  --R: 55.9px /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/;
+  
+  height: 100px;
+
+  mask:
+    radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))),blue 99%,#0000 101%) calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
+    radial-gradient(var(--R) at 50% calc(100% + var(--p)),#0000 99%,red 101%) 50% calc(100% - var(--size))/calc(4*var(--size)) 100% repeat-x;
+  background:linear-gradient(90deg, rgb(60, 60, 216), rgb(64, 51, 153),rgb(42, 89, 245));  
+  border: none;
+}
+.senBot{
+    --size: 50px;
+  --p: 25px;
+  --R: 55.9px; /* sqrt(var(--size)*var(--size) + var(--p)*var(--p)) */;
+
+  height: 100px;
+
+  mask:
+    radial-gradient(var(--R) at 50% calc(var(--size) + var(--p)),blue 99%,#0000 101%) calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
+    radial-gradient(var(--R) at 50% calc(-1*var(--p)),#0000 99%,red 101%) 50% var(--size)/calc(4*var(--size)) 100% repeat-x;
+    background:linear-gradient(90deg, rgb(60, 60, 216), rgb(64, 51, 153),rgb(42, 89, 245));  
+  border: none;
+}
+
     @keyframes rotate {
         0% {
             transform: rotate(0deg);
