@@ -1,11 +1,12 @@
 <script lang="ts">
-    
 </script>
 
-<header class="my-2 mx-4 font-bold flex items-center justify-between" >
-    <a href="https://storwe.vercel.app/" rel="icon" target="_self"><i class=" text-4xl bi bi-box-fill"></i><br>Store</a>
-    <button class="text-3xl">Projects</button>
+<header class="my-2 mx-4 flex items-center justify-between font-bold">
+    <a href="https://storwe.vercel.app/" rel="icon" target="_self"><i class=" bi bi-box-fill text-4xl" /><br />Store</a>
+    <!-- <button class="text-3xl"> <a href="/projects">Projects</a> </button> -->
+<p></p>
     <h1 class="flex justify-center text-4xl">Alex Paz</h1>
-    <button class="text-3xl">CV?</button>
-    <a href="https://pokeapi-alexxpf.vercel.app/" rel="noreferrer" target="_blank"><i class="text-4xl bi bi-record-circle"></i><br>Poke</a>
+    <!-- <button class="text-3xl">CV?</button> -->
+    <p></p>
+    <a href="https://pokeapi-alexxpf.vercel.app/" rel="noreferrer" target="_blank"><i class="bi bi-record-circle text-4xl" /><br />Poke</a>
 </header>
