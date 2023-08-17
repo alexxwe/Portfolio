@@ -16,24 +16,23 @@
     import SVELTE from '../lib/components/public/assets/imgSkills/Svelte.png'
     import VSCODE from '../lib/components/public/assets/imgSkills/vscode.svg'
     import GITHUB from '../lib/components/public/assets/imgSkills/github.svg'
-    import NODJS from '../lib/components/public/assets/imgSkills/node.webp'
+    import NODEJS from '../lib/components/public/assets/imgSkills/node.webp'
     import REACT from '../lib/components/public/assets/imgSkills/react.webp'
     import SASS from '../lib/components/public/assets/imgSkills/sass.webp'
     import TYPESCRIPT from '../lib/components/public/assets/imgSkills/typescript.webp'
-
-    
 </script>
-<div class="senTop"></div>
+
+<div class="senTop" />
 <div>
     <div class="grid grid-cols-3 items-center">
         <div class="p-14">
             <img src={digital_nomad} class="animate__animated animate__fadeInLeft h-full" alt="" />
         </div>
-        <div class="conteiner flex justify-center col-span-2 ">
-                <div class="card bg-zinc-800">
+        <div class="conteiner col-span-2 flex justify-center ">
+            <div class="card bg-slate-800">
                 <h1 class="z-10 text-6xl">
                     <p class="animate__animated animate__fadeInDownBig">Welcome</p>
-                    <p class="animate__animated animate__jackInTheBox animate__delay-1s   transition duration-75">
+                    <p class="animate__animated animate__jackInTheBox animate__delay-1s transition duration-75">
                         I am <span class="text-indigo-600"> Alex</span>,
                     </p>
                     <p class="animate__animated animate__fadeInUpBig animate__slow 500ms">Software Developer</p>
@@ -47,8 +46,8 @@
     <h2 class="my-4 text-center text-3xl">Technologies/Skills</h2>
     <hr class="mx-auto h-1 rounded border-0 bg-white" />
 
-    <div class="flex justify-center gap-10 ">
-        <div class="m-10 flex items-center justify-center gap-10 rounded-full bg-gray-500 px-10 py-2 text-center text-xs">
+    <div class="flex justify-center gap-10">
+        <div class="m-10 flex items-center gap-10 rounded-full bg-gray-500 px-10 py-2 text-center text-xs">
             <div class="hover:scale-125">
                 <img src={HTML} alt="HTML logo" class="animate__animated animate__slideInLeft animate__slow 250ms" />
                 <i>HTML</i>
@@ -58,33 +57,59 @@
                 <i>CSS</i>
             </div>
             <div class="hover:scale-125">
-                <img src={JS} alt="Javascript logo" class="animate__animated animate__slideInUp animate__slow 250ms" />
+                <img src={JS} alt="JavaScript logo" class="animate__animated animate__slideInUp animate__slow 250ms" />
                 <i>JS</i>
             </div>
             <div class="hover:scale-125">
-                <img class="animate__animated animate__slideInDown animate__slow 250ms w-9" src={SVELTE} alt="Svelte logo" />
+                <img src={TYPESCRIPT} alt="TypeScript logo" class=" animate__animated animate__slideInRight animate__slow 250ms w-11" />
+                <i>TS</i>
+            </div>
+            <div class="hover:scale-125">
+                <img class="animate__animated animate__slideInDown animate__slow 250ms w-11" src={SVELTE} alt="Svelte logo" />
                 <i>Svelte</i>
             </div>
+            <div class="hover:scale-125">
+                <img src={SASS} alt="SASS logo" class="animate__animated animate__slideInRight animate__slow 250ms h-11" />
+                <i>SASS</i>
+            </div>
+            <div class="hover:scale-125">
+                <img
+                    src={REACT}
+                    alt="React logo"
+                    class="animate__animated animate__slideInRight animate__slow 250ms h-11 mix-blend-color hover:mix-blend-color"
+                />
+                <i>React</i>
+            </div>
+        </div>
+        <div class="m-10 flex items-center justify-center gap-10 rounded-full bg-gray-500 px-10 py-2 text-center text-xs">
             <div class="hover:scale-125">
                 <img src={GIT} alt="Git logo" class="animate__animated animate__slideInDown animate__slow 250ms" />
                 <i>Git</i>
             </div>
             <div class="hover:scale-125">
-                <img src={TAILWINDCSS} alt="TailwindCSS logo" class="animate__animated animate__slideInUp animate__slow 250ms" />
+                <img src={TAILWINDCSS} alt="TailwindCSS logo" class="animate__animated animate__slideInUp animate__slow 250ms w-11" />
                 <i>TailwindCSS</i>
             </div>
-            
+
             <div class="hover:scale-125">
                 <img src={NPM} alt="NPM logo" class="animate__animated animate__slideInRight animate__slow 250ms" />
                 <i>NPM</i>
             </div>
             <div class="hover:scale-125">
-                <img src={VSCODE} alt="VSCode logo" class="animate__animated animate__slideInRight animate__slow 250ms" />
+                <img src={VSCODE} alt="VSCode logo" class="animate__animated animate__slideInRight animate__slow 250ms w-11" />
                 <i>VSCode</i>
             </div>
-            
+            <div class="hover:scale-125">
+                <img src={GITHUB} alt="GitHub logo" class="animate__animated animate__slideInRight animate__slow 250ms w-11" />
+                <i>GitHub</i>
+            </div>
+            <div class="hover:scale-125">
+                <img src={NODEJS} alt="NodeJS logo" class="animate__animated animate__slideInRight animate__slow 250ms h-11" />
+                <i>NodeJS</i>
+            </div>
         </div>
     </div>
+
     <hr class="mx-auto h-0.5 rounded border-0 bg-white" />
 </div>
 
@@ -172,35 +197,34 @@
         <img src={working} alt="" />
     </div>
 </div>
-<div class="senBot"></div>
+<div class="senBot" />
+
 <style>
+    .senTop {
+        --size: 50px;
+        --p: 25px;
+        --R: 55.9px /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/;
 
-.senTop {
-  --size: 50px;
-  --p: 25px;
-  --R: 55.9px /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/;
-  
-  height: 100px;
+        height: 100px;
 
-  mask:
-    radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))),blue 99%,#0000 101%) calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
-    radial-gradient(var(--R) at 50% calc(100% + var(--p)),#0000 99%,red 101%) 50% calc(100% - var(--size))/calc(4*var(--size)) 100% repeat-x;
-  background:linear-gradient(90deg, rgb(60, 60, 216), rgb(64, 51, 153),rgb(42, 89, 245));  
-  border: none;
-}
-.senBot{
-    --size: 50px;
-  --p: 25px;
-  --R: 55.9px; /* sqrt(var(--size)*var(--size) + var(--p)*var(--p)) */;
+        mask: radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))), blue 99%, #0000 101%) calc(50% - 2 * var(--size)) 0 / calc(4 * var(--size))
+                100%,
+            radial-gradient(var(--R) at 50% calc(100% + var(--p)), #0000 99%, red 101%) 50% calc(100% - var(--size)) / calc(4 * var(--size)) 100% repeat-x;
+        background: linear-gradient(90deg, rgb(60, 60, 216), rgb(64, 51, 153), rgb(42, 89, 245));
+        border: none;
+    }
+    .senBot {
+        --size: 50px;
+        --p: 25px;
+        --R: 55.9px; /* sqrt(var(--size)*var(--size) + var(--p)*var(--p)) */
 
-  height: 100px;
+        height: 100px;
 
-  mask:
-    radial-gradient(var(--R) at 50% calc(var(--size) + var(--p)),blue 99%,#0000 101%) calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
-    radial-gradient(var(--R) at 50% calc(-1*var(--p)),#0000 99%,red 101%) 50% var(--size)/calc(4*var(--size)) 100% repeat-x;
-    background:linear-gradient(90deg, rgb(60, 60, 216), rgb(64, 51, 153),rgb(42, 89, 245));  
-  border: none;
-}
+        mask: radial-gradient(var(--R) at 50% calc(var(--size) + var(--p)), blue 99%, #0000 101%) calc(50% - 2 * var(--size)) 0 / calc(4 * var(--size)) 100%,
+            radial-gradient(var(--R) at 50% calc(-1 * var(--p)), #0000 99%, red 101%) 50% var(--size) / calc(4 * var(--size)) 100% repeat-x;
+        background: linear-gradient(90deg, rgb(60, 60, 216), rgb(64, 51, 153), rgb(42, 89, 245));
+        border: none;
+    }
 
     @keyframes rotate {
         0% {
@@ -220,14 +244,16 @@
         text-align: center;
         overflow: hidden;
         margin: 50px;
+        border-radius: 30px;
+        /* border-radius: 45% 45%; */
     }
     .card::before {
         content: '';
         height: 85rem;
         width: 15rem;
-        background: linear-gradient(90deg, rgb(94, 94, 228), rgb(64, 51, 153),rgb(42, 89, 245) );
+        background: linear-gradient(90deg, rgb(94, 94, 228), rgb(64, 51, 153), rgb(42, 89, 245));
         position: absolute;
-        animation: rotate 3.5s linear infinite;
+        animation: rotate 5s linear infinite;
         right: 40%;
     }
 
@@ -235,9 +261,11 @@
         content: '';
         height: 29rem;
         width: 39rem;
-        background: rgb(40, 40, 40);
+        background: rgb(30, 41, 59);
         /* background: rgb(34, 39, 42); */
         position: absolute;
         z-index: 2;
+        border-radius: 30px;
+        /* border-radius: 45% 45%; */
     }
 </style>
