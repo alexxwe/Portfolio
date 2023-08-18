@@ -170,7 +170,7 @@
 
         <a
             class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-gray-300"
-            href="https://storwe.vercel.app/"
+            href="https://dummy-api-gamma.vercel.app/"
             target="_blank"
             rel="noreferer noreferrer"
         >
