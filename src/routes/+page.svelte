@@ -80,8 +80,6 @@
                 />
                 <i>React</i>
             </div>
-        </div>
-        <div class="m-10 flex items-center justify-center gap-10 rounded-full bg-gray-500 px-10 py-2 text-center text-xs">
             <div class="hover:scale-125">
                 <img src={GIT} alt="Git logo" class="animate__animated animate__slideInDown animate__slow 250ms" />
                 <i>Git</i>
