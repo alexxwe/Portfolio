@@ -1,32 +1,28 @@
 <script lang="ts">
     import MouseMove from '../lib/components/mouseMove.svelte'
 
-    import alex from '../lib/components/public/assets/image/alexSquare.jpg'
-    // import pair_programming from '../lib/components/public/assets/svg/undraw_pair_programming_re_or4x.svg'
-    import digital_nomad from '../lib/components/public/assets/svg/undraw_digital_nomad_re_w8uy.svg'
-    // import programming from '../lib/components/public/assets/svg/undraw_programming_re_kg9v.svg'
-    import working from '../lib/components/public/assets/svg/undraw_working_re_ddwy.svg'
-
-    import HTML from '../lib/components/public/assets/imgSkills/HTML.svg'
-    import CSS from '../lib/components/public/assets/imgSkills/CSS.svg'
-    import JS from '../lib/components/public/assets/imgSkills/javascript.svg'
-    import GIT from '../lib/components/public/assets/imgSkills/Git.svg'
-    import TAILWINDCSS from '../lib/components/public/assets/imgSkills/tailwindcss.svg'
-    import NPM from '../lib/components/public/assets/imgSkills/npm.svg'
-    import SVELTE from '../lib/components/public/assets/imgSkills/Svelte.png'
-    import VSCODE from '../lib/components/public/assets/imgSkills/vscode.svg'
-    import GITHUB from '../lib/components/public/assets/imgSkills/github.svg'
-    import NODEJS from '../lib/components/public/assets/imgSkills/node.webp'
-    import REACT from '../lib/components/public/assets/imgSkills/react.webp'
-    import SASS from '../lib/components/public/assets/imgSkills/sass.webp'
-    import TYPESCRIPT from '../lib/components/public/assets/imgSkills/typescript.webp'
+    const IMAGES = {
+        HTML : "/images/skills/HTML.svg",
+        CSS : "/images/skills/CSS.svg",
+        JS : "/images/skills/javascript.svg",
+        GIT : "/images/skills/Git.svg",
+        TAILWINDCSS : "/images/skills/tailwindcss.svg",
+        NPM : "/images/skills/npm.svg",
+        SVELTE : "/images/skills/Svelte.png",
+        VSCODE : "/images/skills/vscode.svg",
+        GITHUB : "/images/skills/github.svg",
+        NODEJS : "/images/skills/node.webp",
+        REACT : "/images/skills/react.webp",
+        SASS : "/images/skills/sass.webp",
+        TYPESCRIPT : "/images/skills/typescript.webp",
+    }
 </script>
 
 <div class="senTop" />
 <div>
     <div class="grid grid-cols-3 items-center">
         <div class="p-14">
-            <img src={digital_nomad} class="animate__animated animate__fadeInLeft h-full" alt="" />
+            <img src="/images/svg/undraw_digital_nomad_re_w8uy.svg" class="animate__animated animate__fadeInLeft h-full" alt="" />
         </div>
         <div class="conteiner col-span-2 flex justify-center ">
             <div class="card bg-slate-800">
@@ -49,60 +45,60 @@
     <div class="flex justify-center gap-10">
         <div class="m-10 flex items-center gap-10 rounded-full bg-gray-500 px-10 py-2 text-center text-xs">
             <div class="hover:scale-125">
-                <img src={HTML} alt="HTML logo" class="animate__animated animate__slideInLeft animate__slow 250ms" />
+                <img src={IMAGES.HTML} alt="HTML logo" class="animate__animated animate__slideInLeft animate__slow 250ms" />
                 <i>HTML</i>
             </div>
             <div class="hover:scale-125">
-                <img src={CSS} alt="CSS logo" class="animate__animated animate__slideInLeft animate__slow 250ms" />
+                <img src={IMAGES.CSS} alt="CSS logo" class="animate__animated animate__slideInLeft animate__slow 250ms" />
                 <i>CSS</i>
             </div>
             <div class="hover:scale-125">
-                <img src={JS} alt="JavaScript logo" class="animate__animated animate__slideInUp animate__slow 250ms" />
+                <img src={IMAGES.JS} alt="JavaScript logo" class="animate__animated animate__slideInUp animate__slow 250ms" />
                 <i>JS</i>
             </div>
             <div class="hover:scale-125">
-                <img src={TYPESCRIPT} alt="TypeScript logo" class=" animate__animated animate__slideInRight animate__slow 250ms w-11" />
+                <img src={IMAGES.TYPESCRIPT} alt="TypeScript logo" class=" animate__animated animate__slideInRight animate__slow 250ms w-11" />
                 <i>TS</i>
             </div>
             <div class="hover:scale-125">
-                <img class="animate__animated animate__slideInDown animate__slow 250ms w-11" src={SVELTE} alt="Svelte logo" />
+                <img class="animate__animated animate__slideInDown animate__slow 250ms w-11" src={IMAGES.SVELTE} alt="Svelte logo" />
                 <i>Svelte</i>
             </div>
             <div class="hover:scale-125">
-                <img src={SASS} alt="SASS logo" class="animate__animated animate__slideInRight animate__slow 250ms h-11" />
+                <img src={IMAGES.SASS} alt="SASS logo" class="animate__animated animate__slideInRight animate__slow 250ms h-11" />
                 <i>SASS</i>
             </div>
             <div class="hover:scale-125">
                 <img
-                    src={REACT}
+                    src={IMAGES.REACT}
                     alt="React logo"
                     class="animate__animated animate__slideInRight animate__slow 250ms h-11 mix-blend-color hover:mix-blend-color"
                 />
                 <i>React</i>
             </div>
             <div class="hover:scale-125">
-                <img src={GIT} alt="Git logo" class="animate__animated animate__slideInDown animate__slow 250ms" />
+                <img src={IMAGES.GIT} alt="Git logo" class="animate__animated animate__slideInDown animate__slow 250ms" />
                 <i>Git</i>
             </div>
             <div class="hover:scale-125">
-                <img src={TAILWINDCSS} alt="TailwindCSS logo" class="animate__animated animate__slideInUp animate__slow 250ms w-11" />
+                <img src={IMAGES.TAILWINDCSS} alt="TailwindCSS logo" class="animate__animated animate__slideInUp animate__slow 250ms w-11" />
                 <i>TailwindCSS</i>
             </div>
 
             <div class="hover:scale-125">
-                <img src={NPM} alt="NPM logo" class="animate__animated animate__slideInRight animate__slow 250ms" />
+                <img src={IMAGES.NPM} alt="NPM logo" class="animate__animated animate__slideInRight animate__slow 250ms" />
                 <i>NPM</i>
             </div>
             <div class="hover:scale-125">
-                <img src={VSCODE} alt="VSCode logo" class="animate__animated animate__slideInRight animate__slow 250ms w-11" />
+                <img src={IMAGES.VSCODE} alt="VSCode logo" class="animate__animated animate__slideInRight animate__slow 250ms w-11" />
                 <i>VSCode</i>
             </div>
             <div class="hover:scale-125">
-                <img src={GITHUB} alt="GitHub logo" class="animate__animated animate__slideInRight animate__slow 250ms w-11" />
+                <img src={IMAGES.GITHUB} alt="GitHub logo" class="animate__animated animate__slideInRight animate__slow 250ms w-11" />
                 <i>GitHub</i>
             </div>
             <div class="hover:scale-125">
-                <img src={NODEJS} alt="NodeJS logo" class="animate__animated animate__slideInRight animate__slow 250ms h-11" />
+                <img src={IMAGES.NODEJS} alt="NodeJS logo" class="animate__animated animate__slideInRight animate__slow 250ms h-11" />
                 <i>NodeJS</i>
             </div>
         </div>
@@ -126,7 +122,7 @@
         />
     </p>
     <div class="p-14">
-        <img src={alex} alt="" class="rounded-full shadow-lg shadow-indigo-600 hover:shadow-xl hover:shadow-indigo-600" />
+        <img src="/images/alexSquare.jpg" alt="" class="rounded-full shadow-lg shadow-indigo-600 hover:shadow-xl hover:shadow-indigo-600" />
     </div>
 </div>
 
@@ -192,7 +188,7 @@
     <h2 class="my-4 text-center text-3xl">Contact me</h2>
     <hr class="mx-auto h-1 rounded border-0 bg-white" />
     <div class="flex justify-center">
-        <img src={working} alt="" />
+        <img src="/images/svg/undraw_working_re_ddwy.svg" alt="" />
     </div>
 </div>
 <div class="senBot" />

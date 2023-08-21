@@ -1,10 +1,6 @@
 <script lang="ts">
-    import alex1 from './public/assets/image/finalAlex1.png'
-    import alex2 from './public/assets/image/finalAlex2.png'
-    import alex3 from './public/assets/image/finalAlex3.png'
-
     import { onMount } from 'svelte'
-
+ import a from "../../../static/images/finalAlex1.png"
     interface SvelteMouseEvent {
         clientX: number
         clientY: number
@@ -49,7 +45,7 @@
         <!-- src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_mono.png" -->
         <div class="card">
             <div class="card_bg_one" />
-            <img class="card_img_one" src={alex1} alt="" />
+            <img class="card_img_one" src="/images/finalAlex1.png" alt="" />
             <div class="card_text">
                 <p class="card_title">Germany</p>
             </div>
@@ -58,7 +54,7 @@
         <!-- src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_chihiro.png -->
         <div class="card">
             <div class="card_bg_two" />
-            <img class="card_img_two" src={alex2} alt="" />
+            <img class="card_img_two" src="/images/finalAlex2.png" alt="" />
             <div class="card_text">
                 <p class="card_title">Milano</p>
             </div>
@@ -67,7 +63,7 @@
         <!-- src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_howlcastle.png" -->
         <div class="card">
             <div class="card_bg_three" />
-            <img class="card_img_three" src={alex3} alt="" />
+            <img class="card_img_three" src="/images/finalAlex3.png" alt="" />
             <div class="card_text">
                 <p class="card_title">Prague</p>
             </div>
@@ -150,7 +146,7 @@
     }
     .card_bg_one {
         /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_monobg.jpg') center / cover no-repeat; */
-        background: url('../components/public/assets/image/alemaniaPraga.jpg') center / cover no-repeat;
+        background: url('/images/alemaniaPraga.jpg') center / cover no-repeat;
         filter: blur(1px);
 
     }
@@ -160,7 +156,7 @@
     }
     .card_bg_two {
         /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_spirited.jpg') center / cover no-repeat; */
-        background: url('../components/public/assets/image/Finalmilano3.jpg') center / cover no-repeat;
+        background: url('/images/Finalmilano3.jpg') center / cover no-repeat;
         filter: blur(1px);
     }
 
@@ -171,7 +167,7 @@
     }
     .card_bg_three {
         /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_howlbg.jpg') center / cover no-repeat; */
-        background: url('../components/public/assets/image/praga2.jpg') center / cover no-repeat;
+        background: url('/images/praga2.jpg') center / cover no-repeat;
         filter: blur(1px);
 
     }
