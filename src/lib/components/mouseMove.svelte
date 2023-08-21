@@ -1,7 +1,7 @@
 <script lang="ts">
-    import alex2 from '../components/public/assets/image/FinalAlex2.png'
-    import alex3 from '../components/public/assets/image/FinalAlex3.png'
-
+    import alex1 from './public/assets/image/finalAlex1.png'
+    import alex2 from './public/assets/image/finalAlex2.png'
+    import alex3 from './public/assets/image/finalAlex3.png'
 
     import { onMount } from 'svelte'
 
@@ -49,7 +49,7 @@
         <!-- src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_mono.png" -->
         <div class="card">
             <div class="card_bg_one" />
-            <img class="card_img_one" src={alex2} alt="" />
+            <img class="card_img_one" src={alex1} alt="" />
             <div class="card_text">
                 <p class="card_title">Germany</p>
             </div>
