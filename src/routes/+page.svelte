@@ -2,19 +2,19 @@
     import MouseMove from '../lib/components/mouseMove.svelte'
 
     const IMAGES = {
-        HTML : "/images/skills/HTML.svg",
-        CSS : "/images/skills/CSS.svg",
-        JS : "/images/skills/javascript.svg",
-        GIT : "/images/skills/Git.svg",
-        TAILWINDCSS : "/images/skills/tailwindcss.svg",
-        NPM : "/images/skills/npm.svg",
-        SVELTE : "/images/skills/Svelte.png",
-        VSCODE : "/images/skills/vscode.svg",
-        GITHUB : "/images/skills/github.svg",
-        NODEJS : "/images/skills/node.webp",
-        REACT : "/images/skills/react.webp",
-        SASS : "/images/skills/sass.webp",
-        TYPESCRIPT : "/images/skills/typescript.webp",
+        HTML: '/images/skills/HTML.svg',
+        CSS: '/images/skills/CSS.svg',
+        JS: '/images/skills/javascript.svg',
+        GIT: '/images/skills/Git.svg',
+        TAILWINDCSS: '/images/skills/tailwindcss.svg',
+        NPM: '/images/skills/npm.svg',
+        SVELTE: '/images/skills/Svelte.png',
+        VSCODE: '/images/skills/vscode.svg',
+        GITHUB: '/images/skills/github.svg',
+        NODEJS: '/images/skills/node.webp',
+        REACT: '/images/skills/react.svg',
+        SASS: '/images/skills/sass.webp',
+        TYPESCRIPT: '/images/skills/typescript.webp',
     }
 </script>
 
@@ -43,7 +43,7 @@
     <hr class="mx-auto h-1 rounded border-0 bg-white" />
 
     <div class="flex justify-center gap-10">
-        <div class="m-10 flex items-center gap-10 rounded-full bg-gray-500 px-10 py-2 text-center text-xs">
+        <div class="m-10 flex items-center gap-10 rounded-full bg-slate-500 px-10 py-2 text-center text-xs">
             <div class="hover:scale-125">
                 <img src={IMAGES.HTML} alt="HTML logo" class="animate__animated animate__slideInLeft animate__slow 250ms" />
                 <i>HTML</i>
