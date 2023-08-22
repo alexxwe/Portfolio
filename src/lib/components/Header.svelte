@@ -25,12 +25,34 @@
 
 <header class="my-2 mx-4 flex items-center justify-between font-bold">
     <a href="https://storwe.vercel.app/" rel="icon" target="_self"><i class=" bi bi-box-fill text-4xl" /><br />Store</a>
-    <!-- <button class="text-3xl"> <a href="/projects">Projects</a> </button> -->
+
     <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <img class="sun h-10 cursor-pointer" src="/images/svg/moon.svg" alt="" on:click={toggleDarkMode} />
+    <button><img class="moon h-10 cursor-pointer" src={isDarkMode ? '/images/svg/moon.svg' : '/images/svg/sun.svg'} alt="" on:click={toggleDarkMode} /></button>
+
     <h1 class="flex justify-center text-4xl">Alex Paz</h1>
-    <!-- <button class="text-3xl">CV?</button> -->
+
     <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <img class="moon h-10 cursor-pointer" src="/images/svg/sun.svg" alt="" on:click={toggleDarkMode} />
+    <div class="toggle-button" on:click={toggleDarkMode}>
+        <div class="slider {isDarkMode ? 'bg-black' : 'bg-white'}" style="transform: translateX({isDarkMode ? '100%' : '0%'});" />
+    </div>
     <a href="https://pokeapi-alexxpf.vercel.app/" rel="noreferrer" target="_blank"><i class="bi bi-record-circle text-4xl" /><br />Poke</a>
 </header>
+
+<style>
+    .toggle-button {
+        position: relative;
+        width: 60px;
+        height: 30px;
+        background-color: grey;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .slider {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        border-radius: 50%;
+        transition: 0.5s ease;
+    }
+</style>
