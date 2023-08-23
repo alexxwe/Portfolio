@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Contact from '$lib/components/Contact.svelte'
     import MouseMove from '../lib/components/mouseMove.svelte'
 
     const IMAGES = {
@@ -42,69 +43,70 @@
     <h2 class="my-4 text-center text-3xl">Technologies/Skills</h2>
     <hr class="mx-auto h-1 rounded border-0 bg-white" />
 
-    <div class="flex justify-center gap-10">
-        <div class="m-10 flex items-center gap-10 rounded-full bg-slate-500 px-10 py-2 text-center text-xs">
+    <h1 class="mt-10 text-center text-2xl">Web Development</h1>
+    <div class="flex flex-col items-center">
+        <div class="m-4 flex justify-center gap-10 rounded-full bg-slate-500 px-10 py-2 text-center text-xs">
             <div class="hover:scale-125">
-                <img src={IMAGES.HTML} alt="HTML logo" class="animate__animated animate__slideInLeft animate__slow 250ms" />
+                <img src={IMAGES.HTML} alt="HTML logo" class="animate__animated animate__zoomInLeft animate__slow" />
                 <i>HTML</i>
             </div>
             <div class="hover:scale-125">
-                <img src={IMAGES.CSS} alt="CSS logo" class="animate__animated animate__slideInLeft animate__slow 250ms" />
+                <img src={IMAGES.CSS} alt="CSS logo" class="animate__animated animate__zoomInLeft animate__slow" />
                 <i>CSS</i>
             </div>
             <div class="hover:scale-125">
-                <img src={IMAGES.JS} alt="JavaScript logo" class="animate__animated animate__slideInUp animate__slow 250ms" />
+                <img src={IMAGES.JS} alt="JavaScript logo" class="animate__animated animate__zoomInLeft animate__slow" />
                 <i>JS</i>
             </div>
             <div class="hover:scale-125">
-                <img src={IMAGES.TYPESCRIPT} alt="TypeScript logo" class=" animate__animated animate__slideInRight animate__slow 250ms w-11" />
+                <img src={IMAGES.TYPESCRIPT} alt="TypeScript logo" class=" animate__animated animate__zoomInLeft animate__slow w-11" />
                 <i>TS</i>
             </div>
             <div class="hover:scale-125">
-                <img class="animate__animated animate__slideInDown animate__slow 250ms w-11" src={IMAGES.SVELTE} alt="Svelte logo" />
-                <i>Svelte</i>
-            </div>
-            <div class="hover:scale-125">
-                <img src={IMAGES.SASS} alt="SASS logo" class="animate__animated animate__slideInRight animate__slow 250ms h-11" />
+                <img src={IMAGES.SASS} alt="SASS logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
                 <i>SASS</i>
             </div>
             <div class="hover:scale-125">
-                <img
-                    src={IMAGES.REACT}
-                    alt="React logo"
-                    class="animate__animated animate__slideInRight animate__slow 250ms h-11 mix-blend-color hover:mix-blend-color"
-                />
+                <img class="animate__animated animate__zoomInRight animate__slow w-11" src={IMAGES.SVELTE} alt="Svelte logo" />
+                <i>Svelte</i>
+            </div>
+            <div class="hover:scale-125">
+                <img src={IMAGES.REACT} alt="React logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
                 <i>React</i>
             </div>
             <div class="hover:scale-125">
-                <img src={IMAGES.GIT} alt="Git logo" class="animate__animated animate__slideInDown animate__slow 250ms" />
-                <i>Git</i>
-            </div>
-            <div class="hover:scale-125">
-                <img src={IMAGES.TAILWINDCSS} alt="TailwindCSS logo" class="animate__animated animate__slideInUp animate__slow 250ms w-11" />
+                <img src={IMAGES.TAILWINDCSS} alt="TailwindCSS logo" class="animate__animated animate__zoomInRight animate__slow w-11" />
                 <i>TailwindCSS</i>
+            </div>
+        </div>
+
+        <h1 class="mt-10 text-center text-2xl">Tools and Environment</h1>
+        <div class="mb-10 mt-4 flex justify-center gap-10 rounded-full bg-slate-500 px-10 py-2 text-center text-xs">
+            <div class="hover:scale-125">
+                <img src={IMAGES.GIT} alt="Git logo" class="animate__animated animate__zoomInLeft animate__slow" />
+                <i>Git</i>
             </div>
 
             <div class="hover:scale-125">
-                <img src={IMAGES.NPM} alt="NPM logo" class="animate__animated animate__slideInRight animate__slow 250ms" />
+                <img src={IMAGES.NPM} alt="NPM logo" class="animate__animated animate__zoomInLeft animate__slow" />
                 <i>NPM</i>
             </div>
             <div class="hover:scale-125">
-                <img src={IMAGES.VSCODE} alt="VSCode logo" class="animate__animated animate__slideInRight animate__slow 250ms w-11" />
+                <img src={IMAGES.VSCODE} alt="VSCode logo" class="animate__animated animate__zoomInDown animate__slow w-11" />
                 <i>VSCode</i>
             </div>
             <div class="hover:scale-125">
-                <img src={IMAGES.GITHUB} alt="GitHub logo" class="animate__animated animate__slideInRight animate__slow 250ms w-11" />
+                <img src={IMAGES.GITHUB} alt="GitHub logo" class="animate__animated animate__zoomInRight animate__slow w-11" />
                 <i>GitHub</i>
             </div>
             <div class="hover:scale-125">
-                <img src={IMAGES.NODEJS} alt="NodeJS logo" class="animate__animated animate__slideInRight animate__slow 250ms h-11" />
+                <img src={IMAGES.NODEJS} alt="NodeJS logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
                 <i>NodeJS</i>
             </div>
         </div>
     </div>
 
-    <hr class="mx-auto h-0.5 rounded border-0 bg-white" />
+    <hr class="mx-auto h-1 rounded border-0 bg-white" />
 </div>
 
 <div class="container mx-auto grid grid-cols-3 p-4">
@@ -187,6 +189,7 @@
 <div class="container mx-auto mt-20 p-4">
     <h2 class="my-4 text-center text-3xl">Contact me</h2>
     <hr class="mx-auto h-1 rounded border-0 bg-white" />
+    <Contact />
     <div class="flex justify-center">
         <img src="/images/svg/undraw_working_re_ddwy.svg" alt="" />
     </div>
