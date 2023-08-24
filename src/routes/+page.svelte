@@ -21,13 +21,13 @@
 
 <div class="senTop" />
 <div>
-    <div class="grid grid-cols-3 items-center">
-        <div class="p-14">
-            <img src="/images/svg/undraw_digital_nomad_re_w8uy.svg" class="animate__animated animate__fadeInLeft h-full" alt="" />
+    <div class="flex flex-col items-center lg:flex-row">
+        <div class="md:p-14">
+            <img src="/images/svg/undraw_digital_nomad_re_w8uy.svg" class="animate__animated animate__fadeInLeft animate__slow 2s h-32 lg:h-full" alt="" />
         </div>
-        <div class="conteiner col-span-2 flex justify-center ">
+        <div class="container col-span-3 flex justify-center md:col-span-2 ">
             <div class="card bg-slate-800">
-                <h1 class="z-10 text-6xl">
+                <h1 class="z-10 text-2xl md:text-6xl">
                     <p class="animate__animated animate__fadeInDownBig">Welcome</p>
                     <p class="animate__animated animate__jackInTheBox animate__delay-1s transition duration-75">
                         I am <span class="text-indigo-600"> Alex</span>,
@@ -42,66 +42,70 @@
 <div class="container mx-auto p-4">
     <h2 class="my-4 text-center text-3xl">Technologies/Skills</h2>
     <hr class="mx-auto h-1 rounded border-0 bg-white" />
-
-    <h1 class="mt-10 text-center text-2xl">Web Development</h1>
-    <div class="flex flex-col items-center">
-        <div class="m-4 flex justify-center gap-10 rounded-full bg-slate-500 px-10 py-2 text-center text-xs">
-            <div class="hover:scale-125">
-                <img src={IMAGES.HTML} alt="HTML logo" class="animate__animated animate__zoomInLeft animate__slow" />
-                <i>HTML</i>
-            </div>
-            <div class="hover:scale-125">
-                <img src={IMAGES.CSS} alt="CSS logo" class="animate__animated animate__zoomInLeft animate__slow" />
-                <i>CSS</i>
-            </div>
-            <div class="hover:scale-125">
-                <img src={IMAGES.JS} alt="JavaScript logo" class="animate__animated animate__zoomInLeft animate__slow" />
-                <i>JS</i>
-            </div>
-            <div class="hover:scale-125">
-                <img src={IMAGES.TYPESCRIPT} alt="TypeScript logo" class=" animate__animated animate__zoomInLeft animate__slow w-11" />
-                <i>TS</i>
-            </div>
-            <div class="hover:scale-125">
-                <img src={IMAGES.SASS} alt="SASS logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
-                <i>SASS</i>
-            </div>
-            <div class="hover:scale-125">
-                <img class="animate__animated animate__zoomInRight animate__slow w-11" src={IMAGES.SVELTE} alt="Svelte logo" />
-                <i>Svelte</i>
-            </div>
-            <div class="hover:scale-125">
-                <img src={IMAGES.REACT} alt="React logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
-                <i>React</i>
-            </div>
-            <div class="hover:scale-125">
-                <img src={IMAGES.TAILWINDCSS} alt="TailwindCSS logo" class="animate__animated animate__zoomInRight animate__slow w-11" />
-                <i>TailwindCSS</i>
+    <div class="grid grid-cols-2 md:flex md:flex-col">
+        <div class="flex flex-col items-center">
+            <h1 class="mt-10 text-center text-2xl">Web Development</h1>
+            <div class="m-4 flex flex-col items-center md:flex-row md:justify-center gap-10 rounded-full bg-slate-500 px-2 py-5 md:px-10 md:py-2 text-center text-xs">
+                <div class="hover:scale-125">
+                    <img src={IMAGES.HTML} alt="HTML logo" class="animate__animated animate__zoomInLeft animate__slow" />
+                    <i>HTML</i>
+                </div>
+                <div class="hover:scale-125">
+                    <img src={IMAGES.CSS} alt="CSS logo" class="animate__animated animate__zoomInLeft animate__slow" />
+                    <i>CSS</i>
+                </div>
+                <div class="hover:scale-125">
+                    <img src={IMAGES.JS} alt="JavaScript logo" class="animate__animated animate__zoomInLeft animate__slow" />
+                    <i>JS</i>
+                </div>
+                <div class="hover:scale-125">
+                    <img src={IMAGES.TYPESCRIPT} alt="TypeScript logo" class=" animate__animated animate__zoomInLeft animate__slow w-11" />
+                    <i>TS</i>
+                </div>
+                <div class="hover:scale-125">
+                    <img src={IMAGES.SASS} alt="SASS logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
+                    <i>SASS</i>
+                </div>
+                <div class="hover:scale-125">
+                    <img class="animate__animated animate__zoomInRight animate__slow w-11" src={IMAGES.SVELTE} alt="Svelte logo" />
+                    <i>Svelte</i>
+                </div>
+                <div class="hover:scale-125">
+                    <img src={IMAGES.REACT} alt="React logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
+                    <i>React</i>
+                </div>
+                <div class="hover:scale-125">
+                    <img src={IMAGES.TAILWINDCSS} alt="TailwindCSS logo" class="animate__animated animate__zoomInRight animate__slow w-11" />
+                    <i>TailwindCSS</i>
+                </div>
             </div>
         </div>
+        <div>
+            <div class="flex flex-col items-center">
+                <h1 class="mt-10 text-center text-2xl">Tools and Environment</h1>
+                <div class="m-4 mb-8 flex flex-col items-center md:flex-row md:justify-center gap-10 rounded-full bg-slate-500 px-2 py-5 md:px-10 md:py-2 text-center text-xs">
+                    <div class="hover:scale-125">
+                        <img src={IMAGES.GIT} alt="Git logo" class="animate__animated animate__zoomInLeft animate__slow" />
+                        <i>Git</i>
+                    </div>
 
-        <h1 class="mt-10 text-center text-2xl">Tools and Environment</h1>
-        <div class="mb-10 mt-4 flex justify-center gap-10 rounded-full bg-slate-500 px-10 py-2 text-center text-xs">
-            <div class="hover:scale-125">
-                <img src={IMAGES.GIT} alt="Git logo" class="animate__animated animate__zoomInLeft animate__slow" />
-                <i>Git</i>
-            </div>
-
-            <div class="hover:scale-125">
-                <img src={IMAGES.NPM} alt="NPM logo" class="animate__animated animate__zoomInLeft animate__slow" />
-                <i>NPM</i>
-            </div>
-            <div class="hover:scale-125">
-                <img src={IMAGES.VSCODE} alt="VSCode logo" class="animate__animated animate__zoomInDown animate__slow w-11" />
-                <i>VSCode</i>
-            </div>
-            <div class="hover:scale-125">
-                <img src={IMAGES.GITHUB} alt="GitHub logo" class="animate__animated animate__zoomInRight animate__slow w-11" />
-                <i>GitHub</i>
-            </div>
-            <div class="hover:scale-125">
-                <img src={IMAGES.NODEJS} alt="NodeJS logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
-                <i>NodeJS</i>
+                    <div class="hover:scale-125">
+                        <img src={IMAGES.NPM} alt="NPM logo" class="animate__animated animate__zoomInLeft animate__slow" />
+                        <i>NPM</i>
+                    </div>
+                    <div class="hover:scale-125">
+                        <img src={IMAGES.VSCODE} alt="VSCode logo" class="animate__animated animate__zoomInDown animate__slow w-11" />
+                        <i>VSCode</i>
+                    </div>
+                    <div class="hover:scale-125">
+                        <img src={IMAGES.GITHUB} alt="GitHub logo" class="animate__animated animate__zoomInRight animate__slow w-11" />
+                        <i>GitHub</i>
+                    </div>
+                    <div class="hover:scale-125">
+                        <img src={IMAGES.NODEJS} alt="NodeJS logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
+                        <i>NodeJS</i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -109,13 +113,12 @@
     <hr class="mx-auto h-1 rounded border-0 bg-white" />
 </div>
 
-<div class="container mx-auto grid grid-cols-3 p-4">
-    <h2 class="my-4 text-center text-4xl">About me:</h2>
-    <hr class="mx-auto h-1 rounded border-0 bg-white" />
+<div class="container mx-auto grid grid-cols-3 p-4 text-center sm:text-start">
+    <h2 class="my-4 text-center text-4xl underline col-span-3">About me:</h2>
     <!-- <div>
         <button class="rounded-full bg-indigo-600 px-2 text-xl" on:click={}>ES|EN</button>
     </div> -->
-    <p class="col-span-2 text-2xl">
+    <p class="text-md col-span-3 lg:col-span-2 lg:text-2xl">
         Hi, I'm Alex, a <b>software developer</b> who's had a background as a <b>telecommunications technician</b>. <br /> <br />
         I'm a dedicated computer science student with a good work ethic and a burning passion for constantly improving my skills. <br />
         <br />
@@ -123,8 +126,9 @@
         I enjoy working as a team, firmly believing in the importance of collaboration to achieve innovative and efficient solutions in software development.<br
         />
     </p>
-    <div class="p-14">
-        <img src="/images/alexSquare.jpg" alt="" class="rounded-full shadow-lg shadow-indigo-600 hover:shadow-xl hover:shadow-indigo-600" />
+    <div class="pt-14 lg:p-1 col-span-3 flex justify-center items-center lg:col-span-1">
+        <!-- <div class="pt-14 col-span-3 lg:flex justify-center items-center"> -->
+        <img src="/images/alexSquare.jpg" alt="" class="rounded-full shadow-lg shadow-indigo-600 hover:shadow-xl hover:shadow-indigo-600 h-32 xl:h-96 lg:h-80 md:h-60 " />
     </div>
 </div>
 
@@ -184,7 +188,7 @@
     <hr class="mx-auto h-1 rounded border-0 bg-white" />
 </div>
 
-<MouseMove />
+<!-- <MouseMove /> -->
 
 <div class="container mx-auto mt-20 p-4">
     <h2 class="my-4 text-center text-3xl">Contact me</h2>
@@ -264,5 +268,20 @@
         z-index: 2;
         border-radius: 30px;
         /* border-radius: 45% 45%; */
+    }
+
+    @media (max-width: 768px) {
+        .card {
+            height: 10rem;
+            width: 17rem;
+        }
+        .card::before {
+            height: 25rem;
+            width: 4rem;
+        }
+        .card::after {
+            height: 9.5rem;
+            width: 16.5rem;
+        }
     }
 </style>
