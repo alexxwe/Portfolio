@@ -4,7 +4,9 @@
         clientX: number
         clientY: number
     }
-    
+    interface touchEvent {
+        touches: TouchList
+    }
 
     let cards: HTMLDivElement
     let images: NodeListOf<HTMLImageElement>
@@ -34,7 +36,21 @@
                 })
             })
 
-            
+            document.addEventListener('touchmove', (event: touchEvent) => {
+                const xValue = Number(calcValue(event.touches[0].clientX, window.innerWidth))
+
+                if (xValue >= -50 && xValue <= 50) {
+                    cards.style.transform = `rotateY(${xValue}deg)`
+
+                    images.forEach((image: HTMLImageElement) => {
+                        image.style.transform = `translateX(${xValue}px)`
+                    })
+
+                    backgrounds.forEach((background: HTMLDivElement) => {
+                        background.style.transform = `translateX(${xValue * 2}px)`
+                    })
+                }
+            })
         }
     })
 </script>
