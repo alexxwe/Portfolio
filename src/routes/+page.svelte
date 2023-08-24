@@ -126,8 +126,7 @@
         I enjoy working as a team, firmly believing in the importance of collaboration to achieve innovative and efficient solutions in software development.<br
         />
     </p>
-    <div class="pt-14 lg:p-1 col-span-3 flex justify-center items-center lg:col-span-1">
-        <!-- <div class="pt-14 col-span-3 lg:flex justify-center items-center"> -->
+    <div class="pt-10 lg:p-1 col-span-3 flex justify-center items-center lg:col-span-1">
         <img src="/images/alexSquare.jpg" alt="" class="rounded-full shadow-lg shadow-indigo-600 hover:shadow-xl hover:shadow-indigo-600 h-32 xl:h-96 lg:h-80 md:h-60 " />
     </div>
 </div>
@@ -136,7 +135,7 @@
     <h2 class="my-4 text-center text-3xl">Projects</h2>
     <hr class="mx-auto h-1 rounded border-0 bg-white" />
 
-    <div class="m-4 grid grid-cols-3">
+    <div class="m-4 lg:grid lg:grid-cols-3 flex flex-col">
         <a
             class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-gray-300"
             href="https://pokewe.vercel.app/"
@@ -151,8 +150,7 @@
                 src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/0/02/latest/20090125150654/Pok%C3%A9_Ball_%28Ilustraci%C3%B3n%29.png/800px-Pok%C3%A9_Ball_%28Ilustraci%C3%B3n%29.png"
                 alt=""
             />
-            <hr class="mx-auto h-1 rounded border-0 bg-white" />
-            <p class="flex justify-center">Select all the pokemon in my custom Pokedex. <br />Made with the PokeAPI</p>
+            <p class="mt-2 text-center">Select all the pokemon in my custom Pokedex. <br />Made with the PokeAPI</p>
         </a>
 
         <a
@@ -166,8 +164,7 @@
 
             <img class="flex w-auto justify-center" src="https://fakestoreapi.com/icons/logo.png" alt="" />
             <!-- src="https://www.definicionabc.com/wp-content/uploads/tecnologia/App-Store.jpg" -->
-            <hr class="mx-auto h-1 rounded border-0 bg-white" />
-            <p class="flex justify-center">Store simulation. <br />Made with the StoreAPI</p>
+            <p class="mt-2 text-center">Store simulation. <br />Made with the StoreAPI</p>
         </a>
 
         <a
@@ -181,8 +178,7 @@
 
             <img class="flex w-auto justify-center" src="https://fakestoreapi.com/icons/intro.svg" alt="" />
 
-            <hr class="mx-auto h-1 rounded border-0 bg-white" />
-            <p class="flex justify-center">Store simulation. <br />Made with the DummyAPI</p>
+            <p class="mt-2 text-center">Store simulation. <br />Made with the DummyAPI</p>
         </a>
     </div>
     <hr class="mx-auto h-1 rounded border-0 bg-white" />
