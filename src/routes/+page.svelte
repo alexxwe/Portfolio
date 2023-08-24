@@ -184,7 +184,7 @@
     <hr class="mx-auto h-1 rounded border-0 bg-white" />
 </div>
 
-<!-- <MouseMove /> -->
+<MouseMove />
 
 <div class="container mx-auto mt-20 p-4">
     <h2 class="my-4 text-center text-3xl">Contact me</h2>
