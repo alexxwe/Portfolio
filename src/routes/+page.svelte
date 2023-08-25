@@ -40,11 +40,11 @@
 </div>
 
 <div class="container mx-auto p-4">
-    <h2 class="my-4 text-center text-3xl">Technologies/Skills</h2>
+    <h2 class="my-4 text-center text-2xl sm:text-3xl">Technologies/Skills</h2>
     <hr class="mx-auto h-1 rounded border-0 bg-white" />
     <div class="grid grid-cols-2 md:flex md:flex-col">
         <div class="flex flex-col items-center">
-            <h1 class="mt-10 text-center text-2xl">Web Development</h1>
+            <h1 class="mt-10 text-center text-xl sm:text-2xl">Web Development</h1>
             <div class="m-4 flex flex-col items-center md:flex-row md:justify-center gap-10 rounded-full bg-slate-500 px-2 py-5 md:px-10 md:py-2 text-center text-xs">
                 <div class="hover:scale-125">
                     <img src={IMAGES.HTML} alt="HTML logo" class="animate__animated animate__zoomInLeft animate__slow" />
@@ -82,7 +82,7 @@
         </div>
         <div>
             <div class="flex flex-col items-center">
-                <h1 class="mt-10 text-center text-2xl">Tools and Environment</h1>
+                <h1 class="mt-10 text-center text-xl sm:text-2xl">Tools and Environment</h1>
                 <div class="m-4 mb-8 flex flex-col items-center md:flex-row md:justify-center gap-10 rounded-full bg-slate-500 px-2 py-5 md:px-10 md:py-2 text-center text-xs">
                     <div class="hover:scale-125">
                         <img src={IMAGES.GIT} alt="Git logo" class="animate__animated animate__zoomInLeft animate__slow" />
@@ -110,7 +110,7 @@
         </div>
     </div>
 
-    <hr class="mx-auto h-1 rounded border-0 bg-white" />
+    <hr class="mx-auto mt-6 h-1 rounded border-0 bg-white" />
 </div>
 
 <div class="container mx-auto grid grid-cols-3 p-4 text-center sm:text-start">
@@ -118,7 +118,7 @@
     <!-- <div>
         <button class="rounded-full bg-indigo-600 px-2 text-xl" on:click={}>ES|EN</button>
     </div> -->
-    <p class="text-md col-span-3 lg:col-span-2 lg:text-2xl">
+    <p class="text-lg col-span-3 lg:col-span-2 lg:text-2xl">
         Hi, I'm Alex, a <b>software developer</b> who's had a background as a <b>telecommunications technician</b>. <br /> <br />
         I'm a dedicated computer science student with a good work ethic and a burning passion for constantly improving my skills. <br />
         <br />
@@ -127,7 +127,7 @@
         />
     </p>
     <div class="pt-10 lg:p-1 col-span-3 flex justify-center items-center lg:col-span-1">
-        <img src="/images/alexSquare.jpg" alt="" class="rounded-full shadow-lg shadow-indigo-600 hover:shadow-xl hover:shadow-indigo-600 h-32 xl:h-96 lg:h-80 md:h-60 " />
+        <img src="/images/alexSquare.jpg" alt="" class="rounded-full shadow-lg shadow-indigo-600 hover:shadow-xl hover:shadow-indigo-600 h-40 xl:h-96 lg:h-80 md:h-60 " />
     </div>
 </div>
 
@@ -190,7 +190,7 @@
     <h2 class="my-4 text-center text-3xl">Contact me</h2>
     <hr class="mx-auto h-1 rounded border-0 bg-white" />
     <Contact />
-    <div class="flex justify-center">
+    <div class="flex justify-center mt-10">
         <img src="/images/svg/undraw_working_re_ddwy.svg" alt="" />
     </div>
 </div>
@@ -266,7 +266,7 @@
         /* border-radius: 45% 45%; */
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 770px) {
         .card {
             height: 10rem;
             width: 17rem;
@@ -278,6 +278,21 @@
         .card::after {
             height: 9.5rem;
             width: 16.5rem;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .card {
+            height: 9rem;
+            width: 10rem;
+        }
+        .card::before {
+            height: 25rem;
+            width: 4rem;
+        }
+        .card::after {
+            height: 8.5rem;
+            width: 9.5rem;
         }
     }
 </style>
