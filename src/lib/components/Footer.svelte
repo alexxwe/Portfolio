@@ -1,11 +1,9 @@
 <script lang="ts">
-
 </script>
 
-<footer class="flex justify-between my-4 mx-4 text-2xl ">
-    <a href="https://es.linkedin.com/" rel="noreferrer" target="_blank"><i class="bi bi-linkedin"></i> Linkedin</a>
-    <a href="https://twitter.com/" rel="noreferrer" target="_blank"> <i class="bi bi-twitter"></i> Twitter</a>
-    <a href="https://github.com/alexxwe" rel="noreferrer" target="_blank"><i class="bi bi-github"></i> GitHub</a>
-    <a href="https://platzi.com/" rel="noreferrer" target="_blank"><i class="bi bi-star-fill"></i> Platzi</a>
-
+<footer class="my-4 mx-4 flex justify-between  text-lg md:text-2xl">
+    <a href="https://www.linkedin.com/in/alexpazf/" rel="noreferrer" target="_blank"><i class="bi bi-linkedin flex justify-center" /> Linkedin</a>
+    <a href="https://twitter.com/" rel="noreferrer" target="_blank"> <i class="bi bi-twitter flex justify-center" /> Twitter</a>
+    <a href="https://github.com/alexxwe" rel="noreferrer" target="_blank"><i class="bi bi-github flex justify-center" /> GitHub</a>
+    <a href="https://instagram.com/" rel="noreferrer" target="_blank"><i class="bi bi-instagram flex justify-center" /> Instagram</a>
 </footer>
