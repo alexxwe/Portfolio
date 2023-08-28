@@ -7,7 +7,6 @@
         const formData = { name, email, message }
 
         try {
-            
         } catch (error) {
             console.error('Error sending message:', error)
         }
@@ -15,39 +14,34 @@
 </script>
 
 <div class="rounded-md p-6 shadow-md">
-    <h2 class="mb-4 text-xl font-semibold">Contact Me</h2>
+    <h2 class="mb-4 text-xl font-semibold">Contact:</h2>
     <form on:submit={handleSubmit}>
         <div class="mb-4">
             <label class="mb-2 block text-sm font-bold text-slate-700" for="name">Name:</label>
-            <input
-                placeholder="Alex Paz"
-                class="w-full rounded border py-2 px-3 text-slate-700 bg-slate-500"
-                type="text"
-                id="name"
-                bind:value={name}
-            />
+            <input placeholder="Name" class="w-full rounded border bg-slate-500 py-2 px-3 text-slate-700" type="text" id="name" bind:value={name} />
         </div>
         <div class="mb-4">
             <label class="mb-2 block text-sm font-bold text-slate-700" for="email">Email:</label>
             <input
                 placeholder="email@gmail.com"
-                class="w-full rounded border py-2 px-3 text-slate-700 bg-slate-500"
+                class="w-full rounded border bg-slate-500 py-2 px-3 text-slate-700"
                 type="email"
                 id="email"
                 bind:value={email}
             />
         </div>
+
         <div class="mb-4">
             <label class="mb-2 block text-sm font-bold text-slate-700" for="message">Message:</label>
             <textarea
                 placeholder="Write your message here"
-                class="w-full rounded border py-2 px-3 text-slate-700 bg-slate-500"
+                class="w-full rounded border bg-slate-500 py-2 px-3 text-slate-700"
                 id="message"
                 bind:value={message}
             />
         </div>
-        <button class="rounded bg-indigo-600 py-2 px-4 font-bold text-white hover:bg-indigo-800" type="submit">
-            Send
-        </button>
+        <div class="flex justify-center">
+            <button class="rounded bg-indigo-600 py-2 px-8 font-bold text-white hover:bg-indigo-800" type="submit"> Send </button>
+        </div>
     </form>
 </div>

@@ -30,7 +30,7 @@
                 <h1 class="z-10 text-2xl md:text-6xl">
                     <p class="animate__animated animate__fadeInDownBig">Welcome</p>
                     <p class="animate__animated animate__jackInTheBox animate__delay-1s transition duration-75">
-                        I am <span class="text-indigo-600"> Alex</span>,
+                        I am <span class="text-indigo-600"> Alex</span>
                     </p>
                     <p class="animate__animated animate__fadeInUpBig animate__slow 500ms">Software Developer</p>
                 </h1>
@@ -75,7 +75,7 @@
                     <i>React</i>
                 </div>
                 <div class="hover:scale-125">
-                    <img src={IMAGES.TAILWINDCSS} alt="TailwindCSS logo" class="animate__animated animate__zoomInRight animate__slow w-11" />
+                    <img src={IMAGES.TAILWINDCSS} alt="TailwindCSS logo" class="mx-auto animate__animated animate__zoomInRight animate__slow w-11" />
                     <i>TailwindCSS</i>
                 </div>
             </div>
@@ -187,7 +187,7 @@
 <MouseMove />
 
 <div class="container mx-auto mt-20 p-4">
-    <h2 class="my-4 text-center text-3xl">Contact me</h2>
+    <h2 class="my-4 text-center text-3xl underline">Contact me:</h2>
     <hr class="mx-auto h-1 rounded border-0 bg-white" />
     <Contact />
     <div class="flex justify-center mt-10">
