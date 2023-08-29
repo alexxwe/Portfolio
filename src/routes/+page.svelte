@@ -20,7 +20,7 @@
 </script>
 
 <div class="senTop" />
-<div>
+<div class=" container mx-auto max-w-7xl">
     <div class="flex flex-col items-center lg:flex-row">
         <div class="md:p-14">
             <img src="/images/svg/undraw_digital_nomad_re_w8uy.svg" class="animate__animated animate__fadeInLeft animate__slow 2s h-32 lg:h-full" alt="" />
@@ -28,24 +28,24 @@
         <div class="container col-span-3 flex justify-center md:col-span-2 ">
             <div class="card bg-slate-800">
                 <h1 class="z-10 text-2xl md:text-6xl">
-                    <p class="animate__animated animate__fadeInDownBig">Welcome</p>
-                    <p class="animate__animated animate__jackInTheBox animate__delay-1s transition duration-75">
+                    <p class="animate__animated animate__fadeInDownBig text-white">Welcome</p>
+                    <p class="animate__animated animate__jackInTheBox animate__delay-1s transition duration-75 text-white">
                         I am <span class="text-indigo-600"> Alex</span>
                     </p>
-                    <p class="animate__animated animate__fadeInUpBig animate__slow 500ms">Software Developer</p>
+                    <p class="animate__animated animate__fadeInUpBig animate__slow 500ms text-white">Software Developer</p>
                 </h1>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container mx-auto p-4">
+<div class="container mx-auto max-w-7xl p-4">
     <h2 class="my-4 text-center text-2xl sm:text-3xl">Technologies/Skills</h2>
-    <hr class="mx-auto h-1 rounded border-0 bg-white" />
+    <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
     <div class="grid grid-cols-2 md:flex md:flex-col">
         <div class="flex flex-col items-center">
             <h1 class="mt-10 text-center text-xl sm:text-2xl">Web Development</h1>
-            <div class="m-4 flex flex-col items-center md:flex-row md:justify-center gap-10 rounded-full bg-slate-500 px-2 py-5 md:px-10 md:py-2 text-center text-xs">
+            <div class="m-4 flex flex-col items-center md:flex-row md:justify-center gap-10 rounded-full bg-slate-500 px-3 py-5 md:px-10 md:py-3 text-center text-xs">
                 <div class="hover:scale-125">
                     <img src={IMAGES.HTML} alt="HTML logo" class="animate__animated animate__zoomInLeft animate__slow" />
                     <i>HTML</i>
@@ -62,10 +62,7 @@
                     <img src={IMAGES.TYPESCRIPT} alt="TypeScript logo" class=" animate__animated animate__zoomInLeft animate__slow w-11" />
                     <i>TS</i>
                 </div>
-                <div class="hover:scale-125">
-                    <img src={IMAGES.SASS} alt="SASS logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
-                    <i>SASS</i>
-                </div>
+                
                 <div class="hover:scale-125">
                     <img class="animate__animated animate__zoomInRight animate__slow w-11" src={IMAGES.SVELTE} alt="Svelte logo" />
                     <i>Svelte</i>
@@ -78,12 +75,16 @@
                     <img src={IMAGES.TAILWINDCSS} alt="TailwindCSS logo" class="mx-auto animate__animated animate__zoomInRight animate__slow w-11" />
                     <i>TailwindCSS</i>
                 </div>
+                <div class="hover:scale-125">
+                    <img src={IMAGES.SASS} alt="SASS logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
+                    <i>SASS</i>
+                </div>
             </div>
         </div>
         <div>
             <div class="flex flex-col items-center">
                 <h1 class="mt-10 text-center text-xl sm:text-2xl">Tools and Environment</h1>
-                <div class="m-4 mb-8 flex flex-col items-center md:flex-row md:justify-center gap-10 rounded-full bg-slate-500 px-2 py-5 md:px-10 md:py-2 text-center text-xs">
+                <div class="m-4 mb-8 flex flex-col items-center md:flex-row md:justify-center gap-10 rounded-full bg-slate-500 px-3 py-6 md:px-10 md:py-3 text-center text-xs">
                     <div class="hover:scale-125">
                         <img src={IMAGES.GIT} alt="Git logo" class="animate__animated animate__zoomInLeft animate__slow" />
                         <i>Git</i>
@@ -110,10 +111,10 @@
         </div>
     </div>
 
-    <hr class="mx-auto mt-6 h-1 rounded border-0 bg-white" />
+    <hr class="mx-auto mt-6 h-1 rounded border-0 bg-black dark:bg-white" />
 </div>
 
-<div class="container mx-auto grid grid-cols-3 p-4 text-center sm:text-start">
+<div class="container mx-auto max-w-7xl grid grid-cols-3 p-4 text-center sm:text-start">
     <h2 class="my-4 text-center text-4xl underline col-span-3">About me:</h2>
     <!-- <div>
         <button class="rounded-full bg-indigo-600 px-2 text-xl" on:click={}>ES|EN</button>
@@ -127,23 +128,23 @@
         />
     </p>
     <div class="pt-10 lg:p-1 col-span-3 flex justify-center items-center lg:col-span-1">
-        <img src="/images/alexSquare.jpg" alt="" class="rounded-full shadow-lg shadow-indigo-600 hover:shadow-xl hover:shadow-indigo-600 h-40 xl:h-96 lg:h-80 md:h-60 " />
+        <img src="/images/alexSquare.jpg" alt="" class="rounded-full shadow-lg shadow-indigo-600 hover:shadow-xl hover:shadow-indigo-600 h-40 xl:h-90 lg:h-80 md:h-60 " />
     </div>
 </div>
 
-<div class="container mx-auto p-4">
+<div class="container mx-auto max-w-7xl p-4">
     <h2 class="my-4 text-center text-3xl">Projects</h2>
-    <hr class="mx-auto h-1 rounded border-0 bg-white" />
+    <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
 
     <div class="m-4 lg:grid lg:grid-cols-3 flex flex-col">
         <a
-            class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-gray-300"
+            class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-indigo-500 dark:hover:shadow-gray-300"
             href="https://pokewe.vercel.app/"
             target="_blank"
             rel="noreferer noreferrer"
         >
             <h1 class="flex justify-center text-4xl">PokeApi</h1>
-            <hr class=" m-2 h-0.5 rounded bg-white" />
+            <hr class="m-2 h-0.5 rounded bg-white" />
 
             <img
                 class="flex w-auto justify-center"
@@ -154,41 +155,41 @@
         </a>
 
         <a
-            class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-gray-300"
+            class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-indigo-500 dark:hover:shadow-gray-300"
             href="https://storwe.vercel.app/"
             target="_blank"
             rel="noreferer noreferrer"
         >
             <h1 class="flex justify-center text-4xl">StorWe</h1>
-            <hr class=" m-2 h-0.5 rounded bg-white" />
+            <hr class="m-2 h-0.5 rounded bg-white" />
 
             <img class="flex w-auto justify-center" src="https://fakestoreapi.com/icons/logo.png" alt="" />
             <!-- src="https://www.definicionabc.com/wp-content/uploads/tecnologia/App-Store.jpg" -->
-            <p class="mt-2 text-center">Store simulation. <br />Made with the StoreAPI</p>
+            <p class="mt-2 text-center">Store simulation <br />Made with the StoreAPI</p>
         </a>
 
         <a
-            class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-gray-300"
+            class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-indigo-500 dark:hover:shadow-gray-300"
             href="https://dummywe.vercel.app/"
             target="_blank"
             rel="noreferer noreferrer"
         >
             <h1 class="flex justify-center text-4xl">DummyApi</h1>
-            <hr class=" m-2 h-0.5 rounded bg-white" />
+            <hr class="m-2 h-0.5 rounded bg-white" />
 
             <img class="flex w-auto justify-center" src="https://fakestoreapi.com/icons/intro.svg" alt="" />
 
             <p class="mt-2 text-center">Store simulation. <br />Made with the DummyAPI</p>
         </a>
     </div>
-    <hr class="mx-auto h-1 rounded border-0 bg-white" />
+    <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
 </div>
 
 <MouseMove />
 
-<div class="container mx-auto mt-20 p-4">
+<div class="container mx-auto max-w-7xl mt-20 p-4">
     <h2 class="my-4 text-center text-3xl underline">Contact me:</h2>
-    <hr class="mx-auto h-1 rounded border-0 bg-white" />
+    <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
     <Contact />
     <div class="flex justify-center mt-10">
         <img src="/images/svg/undraw_working_re_ddwy.svg" alt="" />
