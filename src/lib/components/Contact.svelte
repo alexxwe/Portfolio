@@ -14,17 +14,17 @@
 </script>
 
 <div class="rounded-md p-6 shadow-md">
-    <h2 class="mb-4 text-xl font-semibold">Contact:</h2>
+    <h2 class="mb-4 text-2xl font-semibold underline">Contact:</h2>
     <form on:submit={handleSubmit}>
         <div class="mb-4">
-            <label class="mb-2 block text-sm font-bold text-slate-700" for="name">Name:</label>
-            <input placeholder="Name" class="w-full rounded border bg-slate-500 py-2 px-3 text-slate-700" type="text" id="name" bind:value={name} />
+            <label class="mb-2 block text-sm font-bold text-slate-700 dark:text-white" for="name">Name:</label>
+            <input placeholder="Name" class="w-full rounded border bg-indigo-200 dark:bg-slate-500 py-2 px-3 text-slate-700 dark:text-white" type="text" id="name" bind:value={name} />
         </div>
         <div class="mb-4">
-            <label class="mb-2 block text-sm font-bold text-slate-700" for="email">Email:</label>
+            <label class="mb-2 block text-sm font-bold text-slate-700 dark:text-white" for="email">Email:</label>
             <input
                 placeholder="email@gmail.com"
-                class="w-full rounded border bg-slate-500 py-2 px-3 text-slate-700"
+                class="w-full rounded border bg-indigo-200 dark:bg-slate-500 py-2 px-3 text-slate-700 dark:text-white"
                 type="email"
                 id="email"
                 bind:value={email}
@@ -32,10 +32,10 @@
         </div>
 
         <div class="mb-4">
-            <label class="mb-2 block text-sm font-bold text-slate-700" for="message">Message:</label>
+            <label class="mb-2 block text-sm font-bold text-slate-700 dark:text-white" for="message">Message:</label>
             <textarea
                 placeholder="Write your message here"
-                class="w-full rounded border bg-slate-500 py-2 px-3 text-slate-700"
+                class="w-full rounded border bg-indigo-200 dark:bg-slate-500 py-2 px-3 text-slate-700 dark:text-white"
                 id="message"
                 bind:value={message}
             />

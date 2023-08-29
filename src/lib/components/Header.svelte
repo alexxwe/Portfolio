@@ -23,11 +23,18 @@
     }
 </script>
 
-<header class="my-2 mx-4 flex items-center justify-between font-bold text-2xl sm:text-4xl">
-    <a href="https://www.google.com/" rel="noreferrer" target="_blank"><i class="bi bi-file-earmark-person"></a>
+<div class="my-2 mx-4 flex items-center justify-between text-2xl font-bold sm:text-4xl">
+    <a href="https://www.google.com/" rel="noreferrer" target="_blank"><i class="bi bi-file-earmark-person" /></a>
 
     <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <button><img class="moon h-6 sm:h-10 cursor-pointer" src={isDarkMode ? '/images/svg/moon.svg' : '/images/svg/sun.svg'} alt="" on:click={toggleDarkMode} /></button>
+    <button
+        ><img
+            class=" rounded-full {isDarkMode ? 'bg-blue-700 hover:bg-blue-800' : 'bg-blue-600 hover:bg-blue-500'}  moon h-6 cursor-pointer p-1 sm:h-10"
+            src={isDarkMode ? '/images/svg/moon.svg' : '/images/svg/sun.svg'}
+            alt=""
+            on:click={toggleDarkMode}
+        /></button
+    >
 
     <h1 class="flex justify-center text-2xl sm:text-4xl">Alex Paz</h1>
 
@@ -35,8 +42,8 @@
     <div class="toggle-button" on:click={toggleDarkMode}>
         <div class="slider {isDarkMode ? 'bg-black' : 'bg-white'}" style="transform: translateX({isDarkMode ? '100%' : '0%'});" />
     </div>
-    <a href="https://github.com/alexxwe" rel="noreferrer" target="_blank"><i class="bi bi-github"></a>
-</header>
+    <a href="https://github.com/alexxwe" rel="noreferrer" target="_blank"><i class="bi bi-github"/></a>
+</div>
 
 <style>
     .toggle-button {
