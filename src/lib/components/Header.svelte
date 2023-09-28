@@ -31,7 +31,7 @@
 
 <div class="my-2 mx-4 flex items-center justify-between text-2xl font-bold sm:text-4xl">
     <div class="relative z-10">
-        <button class="bi bi-file-earmark-person" on:click={dropdown}></button>
+        <button class="bi bi-file-earmark-person hover:bg-blue-500 rounded-md p-1" on:click={dropdown}></button>
         {#if isExpanded}
         <div class="absolute shadow-lg rounded bg-indigo-800 m-1 text-2xl p-1 w-16 flex-col mx-auto flex items-center ">
             <a href="/pdf/CV_Alex_esp.pdf" target="_blank">
