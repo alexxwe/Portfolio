@@ -20,7 +20,7 @@
 </script>
 
 <div class="senTop" />
-<div class=" container mx-auto max-w-7xl">
+<div id="Index" class="container mx-auto max-w-7xl h-screen flex items-center justify-center">
     <div class="flex flex-col items-center lg:flex-row">
         <div class="md:p-14">
             <img src="/images/svg/undraw_digital_nomad_re_w8uy.svg" class="animate__animated animate__fadeInLeft animate__slow 2s h-32 lg:h-full" alt="" />
@@ -39,8 +39,17 @@
     </div>
 </div>
 
-<div class="container mx-auto max-w-7xl p-4">
-    <h2 class="my-4 text-center text-2xl sm:text-3xl">Technologies/Skills</h2>
+<div class="flex justify-between items-center container max-w-xl mx-auto text-2xl m-10">
+    <a href="#Index" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:underline">Index</a>
+    <a href="#Skills" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:underline">Skills</a>
+    <a href="#About" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:underline">About</a>
+    <a href="#Projects" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:underline">Projects</a>
+    <a href="#Me" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:underline">Me</a>
+    <a href="#Contact" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:underline">Contact</a>
+</div>
+
+<div id="Skills" class="container mx-auto max-w-7xl p-4">
+    <h2  class="my-4 text-center text-2xl sm:text-3xl">Technologies/Skills</h2>
     <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
     <div class="grid grid-cols-2 md:flex md:flex-col">
         <div class="flex flex-col items-center">
@@ -113,8 +122,9 @@
 
     <hr class="mx-auto mt-6 h-1 rounded border-0 bg-black dark:bg-white" />
 </div>
+<div class="h-screen">
 
-<div class="container mx-auto max-w-7xl grid grid-cols-3 p-4 text-center sm:text-start">
+<div id="About" class="container mx-auto max-w-7xl grid grid-cols-3 p-4 text-center sm:text-start">
     <h2 class="my-4 text-center text-4xl underline col-span-3">About me:</h2>
     <!-- <div>
         <button class="rounded-full bg-indigo-600 px-2 text-xl" on:click={}>ES|EN</button>
@@ -131,8 +141,9 @@
         <img src="/images/alexSquare.jpg" alt="" class="rounded-full shadow-lg shadow-indigo-600 hover:shadow-xl hover:shadow-indigo-600 h-40 xl:h-90 lg:h-80 md:h-60 " />
     </div>
 </div>
+</div>
 
-<div class="container mx-auto max-w-7xl p-4">
+<div id="Projects" class="container mx-auto max-w-7xl p-4">
     <h2 class="my-4 text-center text-3xl">Projects</h2>
     <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
 
@@ -184,10 +195,11 @@
     </div>
     <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
 </div>
+<div id="Me">
+    <MouseMove />
+</div>
 
-<MouseMove />
-
-<div class="container mx-auto max-w-7xl mt-20 p-4">
+<div id="Contact" class="container mx-auto max-w-7xl mt-20 p-4">
     <h2 class="my-4 text-center text-3xl underline">Contact me:</h2>
     <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
     <Contact />
