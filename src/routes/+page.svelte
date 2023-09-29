@@ -20,7 +20,7 @@
 </script>
 
 <div class="senTop" />
-<div id="Index" class="container mx-auto max-w-7xl h-screen flex items-center justify-center">
+<div id="Index" class="container mx-auto max-w-7xl xl:h-screen flex items-center justify-center">
     <div class="flex flex-col items-center lg:flex-row">
         <div class="md:p-14">
             <img src="/images/svg/undraw_digital_nomad_re_w8uy.svg" class="animate__animated animate__fadeInLeft animate__slow 2s h-32 lg:h-full" alt="" />
@@ -39,13 +39,15 @@
     </div>
 </div>
 
-<div class="flex justify-between items-center container max-w-xl mx-auto text-2xl m-10">
-    <a href="#Index" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:underline">Index</a>
-    <a href="#Skills" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:underline">Skills</a>
-    <a href="#About" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:underline">About</a>
-    <a href="#Projects" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:underline">Projects</a>
-    <a href="#Me" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:underline">Me</a>
-    <a href="#Contact" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:underline">Contact</a>
+<div class="container mx-auto text-2xl m-10">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-xl xl:mx-auto md:gap-4">
+    <a href="#Index" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center">Index</a>
+    <a href="#Skills" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center">Skills</a>
+    <a href="#About" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center">About</a>
+    <a href="#Projects" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center">Projects</a>
+    <a href="#Me" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center">Me</a>
+    <a href="#Contact" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center">Contact</a>
+</div>
 </div>
 
 <div id="Skills" class="container mx-auto max-w-7xl p-4">
@@ -122,7 +124,7 @@
 
     <hr class="mx-auto mt-6 h-1 rounded border-0 bg-black dark:bg-white" />
 </div>
-<div class="h-screen">
+<div class="xl:h-screen">
 
 <div id="About" class="container mx-auto max-w-7xl grid grid-cols-3 p-4 text-center sm:text-start">
     <h2 class="my-4 text-center text-4xl underline col-span-3">About me:</h2>
@@ -146,8 +148,8 @@
 <div id="Projects" class="container mx-auto max-w-7xl p-4">
     <h2 class="my-4 text-center text-3xl">Projects</h2>
     <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
-
-    <div class="m-4 lg:grid lg:grid-cols-3 flex flex-col">
+    <div class="m-4 flex justify-center">
+        <div class="lg:grid lg:grid-cols-3 flex flex-col">
         <a
             class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-indigo-500 dark:hover:shadow-gray-300"
             href="https://pokewe.vercel.app/"
@@ -193,6 +195,8 @@
             <p class="mt-2 text-center">Store simulation. <br />Made with the DummyAPI</p>
         </a>
     </div>
+</div>
+
     <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
 </div>
 <div id="Me">

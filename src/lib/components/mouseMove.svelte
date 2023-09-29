@@ -14,6 +14,7 @@
 
     const calcValue = (a: number, b: number): string => ((a / b) * 50 - 50 / 2).toFixed(1)
 
+
     onMount(() => {
         const cards = document.querySelector('.cards') as HTMLDivElement
 
@@ -56,10 +57,10 @@
 </script>
 
 <!-- <div class="flex min-h-screen items-center justify-center overflow-hidden"> -->
-<div class="mt-20 flex items-center justify-center">
+<div class="mt-20 flex items-center justify-center xl:h-screen">
     <div bind:this={cards} class="cards">
         <h1 class="text-3xl font-semibold text-indigo-700">Alejandro</h1>
-        <h3 class="text-lg text-red-600">Paz Ferreirós</h3>
+        <h2 class="text-lg text-red-600">Paz Ferreirós</h2>
         <!-- src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_mono.png" -->
         <div class="card">
             <div class="card_bg_one" />
@@ -98,7 +99,7 @@
         /* transform: translateZ(35px); */
     }
 
-    h3 {
+    h2 {
         text-align: center;
         color: #f12222;
         font-size: 20px;
@@ -123,10 +124,10 @@
         border-radius: 15px;
         /* cursor: pointer; */
         display: inline-block;
-        height: 250px;
+        height: 300px;
+        width: 240px;
         overflow: hidden;
         position: relative;
-        width: 175px;
         text-align: center;
         margin: 0 30px 0 30px;
         box-shadow: 5px 5px 20px -7px rgba(0, 0, 0, 0.5);
