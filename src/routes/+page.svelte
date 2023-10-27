@@ -135,7 +135,7 @@
         Hi, I'm Alex, a <b>software developer</b> who's had a background as a <b>telecommunications technician</b>. <br /> <br />
         I'm a dedicated computer science student with a good work ethic and a burning passion for constantly improving my skills. <br />
         <br />
-        What sets me apart is my unwavering commitment to achieving my goals.<br /><br />
+        What sets me apart is my commitment to achieving my goals.<br /><br />
         I enjoy working as a team, firmly believing in the importance of collaboration to achieve innovative and efficient solutions in software development.<br
         />
     </p>
