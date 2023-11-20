@@ -31,7 +31,7 @@
 
 <div class="my-2 mx-4 flex items-center justify-between text-2xl font-bold sm:text-4xl">
     <div class="relative z-10">
-        <button class="bi bi-file-earmark-person hover:bg-blue-500 rounded-md p-1" on:click={dropdown}></button>
+        <button class="bi bi-file-earmark-person hover:bg-blue-500 rounded-md p-1" on:click={dropdown} title="CV"></button>
         {#if isExpanded}
         <div class="absolute shadow-lg rounded bg-indigo-800 m-1 text-2xl p-1 w-16 flex-col mx-auto flex items-center ">
             <a href="/pdf/CV_Alex_esp.pdf" target="_blank">
@@ -51,7 +51,8 @@
         ><img
             class=" rounded-full {isDarkMode ? 'bg-blue-700 hover:bg-blue-800' : 'bg-blue-600 hover:bg-blue-500'}  moon h-6 cursor-pointer p-1 sm:h-10"
             src={isDarkMode ? '/images/svg/moon.svg' : '/images/svg/sun.svg'}
-            alt=""
+            alt="Light/Dark Mode"
+            title="Light/Dark Mode"
             on:click={toggleDarkMode}
         /></button
     >
@@ -62,7 +63,7 @@
     <div class="toggle-button" on:click={toggleDarkMode}>
         <div class="slider {isDarkMode ? 'bg-black' : 'bg-white'}" style="transform: translateX({isDarkMode ? '100%' : '0%'});" />
     </div>
-    <a href="https://github.com/alexxwe" rel="noreferrer" target="_blank"><i class="bi bi-github"/></a>
+    <a href="https://github.com/alexxwe" rel="noreferrer" target="_blank"><i class="bi bi-github" title="GitHub"/></a>
 </div>
 
 <style>

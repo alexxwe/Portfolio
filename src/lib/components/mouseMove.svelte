@@ -60,7 +60,7 @@
 <div class="mt-20 flex items-center justify-center xl:h-screen">
     <div bind:this={cards} class="cards">
         <h1 class="text-3xl font-semibold text-indigo-700">Alejandro</h1>
-        <h2 class="text-lg text-red-600">Paz Ferreirós</h2>
+        <h2 class="text-lg">Paz Ferreirós</h2>
         <!-- src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_mono.png" -->
         <div class="card">
             <div class="card_bg_one" />
@@ -101,7 +101,7 @@
 
     h2 {
         text-align: center;
-        color: #f12222;
+        color: #ff0000;
         font-size: 20px;
         /* transform: translateZ(25px); */
     }
