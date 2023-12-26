@@ -25,7 +25,7 @@
         <div class="md:p-14">
             <img src="/images/svg/undraw_digital_nomad_re_w8uy.svg" class="animate__animated animate__fadeInLeft animate__slow 2s h-32 lg:h-full" alt="" />
         </div>
-        <div class="container col-span-3 flex justify-center md:col-span-2 ">
+        <div class="container col-span-3 flex justify-center md:col-span-2">
             <div class="card bg-slate-800">
                 <h1 class="z-10 text-2xl md:text-6xl">
                     <p class="animate__animated animate__fadeInDownBig text-white">Welcome</p>
@@ -40,23 +40,35 @@
 </div>
 
 <div class="container mx-auto text-2xl m-10">
-<div class="flex flex-col md:flex-row justify-between items-center max-w-xl xl:mx-auto md:gap-4">
-    <a href="#Index" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center">Index</a>
-    <a href="#Skills" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center">Skills</a>
-    <a href="#About" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center">About</a>
-    <a href="#Projects" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center">Projects</a>
-    <a href="#Me" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center">Me</a>
-    <a href="#Contact" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center">Contact</a>
-</div>
+    <div class="flex flex-col md:flex-row justify-between items-center max-w-xl xl:mx-auto md:gap-4">
+        <a href="#Index" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center"
+            >Index</a
+        >
+        <a href="#Skills" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center"
+            >Skills</a
+        >
+        <a href="#About" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center"
+            >About</a
+        >
+        <a href="#Projects" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center"
+            >Projects</a
+        >
+        <a href="#Me" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center">Me</a>
+        <a href="#Contact" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center"
+            >Contact</a
+        >
+    </div>
 </div>
 
 <div id="Skills" class="container mx-auto max-w-7xl p-4">
-    <h2  class="my-4 text-center text-2xl sm:text-3xl">Technologies/Skills</h2>
+    <h2 class="my-4 text-center text-2xl sm:text-3xl">Technologies/Skills</h2>
     <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
     <div class="grid grid-cols-2 md:flex md:flex-col">
         <div class="flex flex-col items-center">
             <h1 class="mt-10 text-center text-xl sm:text-2xl">Web Development</h1>
-            <div class="m-4 flex flex-col items-center md:flex-row md:justify-center gap-10 rounded-full bg-slate-500 px-3 py-5 md:px-10 md:py-3 text-center text-xs">
+            <div
+                class="m-4 flex flex-col items-center md:flex-row md:justify-center gap-10 rounded-full bg-slate-500 px-3 py-5 md:px-10 md:py-3 text-center text-xs"
+            >
                 <div class="hover:scale-125">
                     <img src={IMAGES.HTML} alt="HTML logo" class="animate__animated animate__zoomInLeft animate__slow" />
                     <i>HTML</i>
@@ -73,7 +85,7 @@
                     <img src={IMAGES.TYPESCRIPT} alt="TypeScript logo" class=" animate__animated animate__zoomInLeft animate__slow w-11" />
                     <i>TS</i>
                 </div>
-                
+
                 <div class="hover:scale-125">
                     <img class="animate__animated animate__zoomInRight animate__slow w-11" src={IMAGES.SVELTE} alt="Svelte logo" />
                     <i>Svelte</i>
@@ -95,7 +107,9 @@
         <div>
             <div class="flex flex-col items-center">
                 <h1 class="mt-10 text-center text-xl sm:text-2xl">Tools and Environment</h1>
-                <div class="m-4 mb-8 flex flex-col items-center md:flex-row md:justify-center gap-10 rounded-full bg-slate-500 px-3 py-6 md:px-10 md:py-3 text-center text-xs">
+                <div
+                    class="m-4 mb-8 flex flex-col items-center md:flex-row md:justify-center gap-10 rounded-full bg-slate-500 px-3 py-6 md:px-10 md:py-3 text-center text-xs"
+                >
                     <div class="hover:scale-125">
                         <img src={IMAGES.GIT} alt="Git logo" class="animate__animated animate__zoomInLeft animate__slow" />
                         <i>Git</i>
@@ -125,77 +139,86 @@
     <hr class="mx-auto mt-6 h-1 rounded border-0 bg-black dark:bg-white" />
 </div>
 <div class="xl:h-screen">
-
-<div id="About" class="container mx-auto max-w-7xl grid grid-cols-3 p-4 text-center sm:text-start">
-    <h2 class="my-4 text-center text-4xl underline col-span-3">About me:</h2>
-    <!-- <div>
+    <div id="About" class="container mx-auto max-w-7xl grid grid-cols-3 p-4 text-center sm:text-start">
+        <h2 class="my-4 text-center text-4xl underline col-span-3">About me:</h2>
+        <!-- <div>
         <button class="rounded-full bg-indigo-600 px-2 text-xl" on:click={}>ES|EN</button>
     </div> -->
-    <p class="text-lg col-span-3 lg:col-span-2 lg:text-2xl">
-        Hi, I'm Alex, a <b>software developer</b> who's had a background as a <b>telecommunications technician</b>. <br /> <br />
-        I'm a dedicated computer science student with a good work ethic and a burning passion for constantly improving my skills. <br />
-        <br />
-        What sets me apart is my commitment to achieving my goals.<br /><br />
-        I enjoy working as a team, firmly believing in the importance of collaboration to achieve innovative and efficient solutions in software development.<br
-        />
-    </p>
-    <div class="pt-10 lg:p-1 col-span-3 flex justify-center items-center lg:col-span-1">
-        <img src="/images/alexSquare.jpg" alt="" class="rounded-full shadow-lg shadow-indigo-600 hover:shadow-xl hover:shadow-indigo-600 h-40 xl:h-90 lg:h-80 md:h-60 " />
+        <p class="text-lg col-span-3 lg:col-span-2 lg:text-2xl">
+            Hi, I'm Alex, a <b>software developer</b> who's had a background as a <b>telecommunications technician</b>. <br /> <br />
+            I'm a dedicated computer science student with a good work ethic and a burning passion for constantly improving my skills. <br />
+            <br />
+            What sets me apart is my commitment to achieving my goals.<br /><br />
+            I enjoy working as a team, firmly believing in the importance of collaboration to achieve innovative and efficient solutions in software development.<br
+            />
+        </p>
+        <div class="pt-10 lg:p-1 col-span-3 flex justify-center items-center lg:col-span-1">
+            <img
+                src="/images/alexSquare.jpg"
+                alt=""
+                class="rounded-full shadow-lg shadow-indigo-600 hover:shadow-xl hover:shadow-indigo-600 h-40 xl:h-90 lg:h-80 md:h-60"
+            />
+        </div>
     </div>
-</div>
 </div>
 
 <div id="Projects" class="container mx-auto max-w-7xl p-4">
     <h2 class="my-4 text-center text-3xl">Projects</h2>
     <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
     <div class="m-4 flex justify-center">
-        <div class="lg:grid lg:grid-cols-3 flex flex-col">
-        <a
-            class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-indigo-500 dark:hover:shadow-gray-300"
-            href="https://pokewe.vercel.app/"
-            target="_blank"
-            rel="noreferer noreferrer"
-        >
-            <h1 class="flex justify-center text-4xl">PokeApi</h1>
-            <hr class="m-2 h-0.5 rounded bg-white" />
+        <section class="lg:grid lg:grid-cols-3 flex flex-col">
+            <article class="flex-grow">
+                <a
+                    class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-indigo-500 dark:hover:shadow-gray-300"
+                    href="https://pokewe.vercel.app/"
+                    target="_blank"
+                    rel="noreferer noreferrer"
+                >
+                    <h1 class="flex justify-center text-4xl">PokeApi</h1>
+                    <hr class="m-2 h-0.5 rounded bg-white" />
 
-            <img
-                class="flex w-auto justify-center"
-                src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/0/02/latest/20090125150654/Pok%C3%A9_Ball_%28Ilustraci%C3%B3n%29.png/800px-Pok%C3%A9_Ball_%28Ilustraci%C3%B3n%29.png"
-                alt=""
-            />
-            <p class="mt-2 text-center">Select all the pokemon in my custom Pokedex. <br />Made with the PokeAPI</p>
-        </a>
+                    <img
+                        class="flex w-auto h-80 justify-center"
+                        src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/0/02/latest/20090125150654/Pok%C3%A9_Ball_%28Ilustraci%C3%B3n%29.png/800px-Pok%C3%A9_Ball_%28Ilustraci%C3%B3n%29.png"
+                        alt=""
+                    />
+                    <p class="mt-2 text-center">Select all the pokemon in my custom Pokedex. <br />Made with the PokeAPI</p>
+                </a>
+            </article>
 
-        <a
-            class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-indigo-500 dark:hover:shadow-gray-300"
-            href="https://storwe.vercel.app/"
-            target="_blank"
-            rel="noreferer noreferrer"
-        >
-            <h1 class="flex justify-center text-4xl">StorWe</h1>
-            <hr class="m-2 h-0.5 rounded bg-white" />
+            <article class="flex-grow">
+                <a
+                    class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-indigo-500 dark:hover:shadow-gray-300"
+                    href="https://storwe.vercel.app/"
+                    target="_blank"
+                    rel="noreferer noreferrer"
+                >
+                    <h1 class="flex justify-center text-4xl">StorWe</h1>
+                    <hr class="m-2 h-0.5 rounded bg-white" />
 
-            <img class="flex w-auto justify-center" src="https://fakestoreapi.com/icons/logo.png" alt="" />
-            <!-- src="https://www.definicionabc.com/wp-content/uploads/tecnologia/App-Store.jpg" -->
-            <p class="mt-2 text-center">Store simulation <br />Made with the StoreAPI</p>
-        </a>
+                    <img class="flex w-auto h-80 justify-center" src="https://fakestoreapi.com/icons/logo.png" alt="" />
+                    <!-- src="https://www.definicionabc.com/wp-content/uploads/tecnologia/App-Store.jpg" -->
+                    <p class="mt-2 text-center">Store simulation <br />Made with the StoreAPI</p>
+                </a>
+            </article>
 
-        <a
-            class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-indigo-500 dark:hover:shadow-gray-300"
-            href="https://dummywe.vercel.app/"
-            target="_blank"
-            rel="noreferer noreferrer"
-        >
-            <h1 class="flex justify-center text-4xl">DummyApi</h1>
-            <hr class="m-2 h-0.5 rounded bg-white" />
+            <article class="flex-grow">
+                <a
+                    class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-indigo-500 dark:hover:shadow-gray-300"
+                    href="https://dummywe.vercel.app/"
+                    target="_blank"
+                    rel="noreferer noreferrer"
+                >
+                    <h1 class="flex justify-center text-4xl">DummyApi</h1>
+                    <hr class="m-2 h-0.5 rounded bg-white" />
 
-            <img class="flex w-auto justify-center" src="https://fakestoreapi.com/icons/intro.svg" alt="" />
+                    <img class="flex w-auto h-80 justify-center" src="https://fakestoreapi.com/icons/intro.svg" alt="" />
 
-            <p class="mt-2 text-center">Store simulation. <br />Made with the DummyAPI</p>
-        </a>
+                    <p class="mt-2 text-center">Store simulation. <br />Made with the DummyAPI</p>
+                </a>
+            </article>
+        </section>
     </div>
-</div>
 
     <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
 </div>
@@ -221,7 +244,8 @@
 
         height: 100px;
 
-        mask: radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))), blue 99%, #0000 101%) calc(50% - 2 * var(--size)) 0 / calc(4 * var(--size))
+        mask:
+            radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))), blue 99%, #0000 101%) calc(50% - 2 * var(--size)) 0 / calc(4 * var(--size))
                 100%,
             radial-gradient(var(--R) at 50% calc(100% + var(--p)), #0000 99%, red 101%) 50% calc(100% - var(--size)) / calc(4 * var(--size)) 100% repeat-x;
         background: linear-gradient(90deg, rgb(60, 60, 216), rgb(64, 51, 153), rgb(42, 89, 245));
@@ -234,7 +258,8 @@
 
         height: 100px;
 
-        mask: radial-gradient(var(--R) at 50% calc(var(--size) + var(--p)), blue 99%, #0000 101%) calc(50% - 2 * var(--size)) 0 / calc(4 * var(--size)) 100%,
+        mask:
+            radial-gradient(var(--R) at 50% calc(var(--size) + var(--p)), blue 99%, #0000 101%) calc(50% - 2 * var(--size)) 0 / calc(4 * var(--size)) 100%,
             radial-gradient(var(--R) at 50% calc(-1 * var(--p)), #0000 99%, red 101%) 50% var(--size) / calc(4 * var(--size)) 100% repeat-x;
         background: linear-gradient(90deg, rgb(60, 60, 216), rgb(64, 51, 153), rgb(42, 89, 245));
         border: none;
