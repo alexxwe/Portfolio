@@ -182,7 +182,14 @@
                         src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/0/02/latest/20090125150654/Pok%C3%A9_Ball_%28Ilustraci%C3%B3n%29.png/800px-Pok%C3%A9_Ball_%28Ilustraci%C3%B3n%29.png"
                         alt=""
                     />
-                    <p class="mt-2 text-center">Select all the pokemon in my custom Pokedex. <br />Made with the PokeAPI</p>
+                    <p class="mt-2 text-center">Collect data and features of all Pokémon. Gotta catch'em all. <br />Made with the PokeAPI</p>
+                    <div class="flex mx-auto gap-4">
+                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.SVELTE}" alt="Svelte" title="Svelte">
+                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.TYPESCRIPT}" alt="TypeScript" title="TypeScript">
+                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.JS}" alt="JavaScript" title="JavaScript">
+                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.HTML}" alt="HTML" title="HTML">
+                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.CSS}" alt="CSS" title="CSS">
+                    </div>
                 </a>
             </article>
 
@@ -198,7 +205,14 @@
 
                     <img class="flex w-auto h-80 justify-center" src="https://fakestoreapi.com/icons/logo.png" alt="" />
                     <!-- src="https://www.definicionabc.com/wp-content/uploads/tecnologia/App-Store.jpg" -->
-                    <p class="mt-2 text-center">Store simulation <br />Made with the StoreAPI</p>
+                    <p class="mt-2 text-center">Efficient and intuitive e-commerce website prototype. <br />Made with the StoreAPI</p>
+                    <div class="flex mx-auto gap-4">
+                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.SVELTE}" alt="Svelte" title="Svelte">
+                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.TYPESCRIPT}" alt="TypeScript" title="TypeScript">
+                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.JS}" alt="JavaScript" title="JavaScript">
+                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.HTML}" alt="HTML" title="HTML">
+                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.CSS}" alt="CSS" title="CSS">
+                    </div>
                 </a>
             </article>
 
@@ -214,7 +228,14 @@
 
                     <img class="flex w-auto h-80 justify-center" src="https://fakestoreapi.com/icons/intro.svg" alt="" />
 
-                    <p class="mt-2 text-center">Store simulation. <br />Made with the DummyAPI</p>
+                    <p class="mt-2 text-center">Bigger e-commerce website, this time with more products. <br />Made with the DummyAPI</p>
+                    <div class="flex mx-auto gap-4">
+                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.SVELTE}" alt="Svelte" title="Svelte">
+                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.TYPESCRIPT}" alt="TypeScript" title="TypeScript">
+                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.JS}" alt="JavaScript" title="JavaScript">
+                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.HTML}" alt="HTML" title="HTML">
+                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.CSS}" alt="CSS" title="CSS">
+                    </div>
                 </a>
             </article>
         </section>
