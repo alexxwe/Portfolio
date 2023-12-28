@@ -178,8 +178,8 @@
                     <hr class="m-2 h-0.5 rounded bg-white" />
 
                     <img
-                        class="flex w-auto h-80 justify-center"
-                        src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/0/02/latest/20090125150654/Pok%C3%A9_Ball_%28Ilustraci%C3%B3n%29.png/800px-Pok%C3%A9_Ball_%28Ilustraci%C3%B3n%29.png"
+                        class="flex w-auto h-80 mx-auto rounded-3xl"
+                        src="https://www.henryhiles.com/images/pokeApiThumb.svg"
                         alt=""
                     />
                     <p class="mt-2 text-center">Collect data and features of all Pokémon. Gotta catch'em all. <br />Made with the PokeAPI</p>
@@ -203,7 +203,7 @@
                     <h1 class="flex justify-center text-4xl">StorWe</h1>
                     <hr class="m-2 h-0.5 rounded bg-white" />
 
-                    <img class="flex w-auto h-80 justify-center" src="https://fakestoreapi.com/icons/logo.png" alt="" />
+                    <img class="flex w-auto h-80 mx-auto" src="https://fakestoreapi.com/icons/logo.png" alt="" />
                     <!-- src="https://www.definicionabc.com/wp-content/uploads/tecnologia/App-Store.jpg" -->
                     <p class="mt-2 text-center">Efficient and intuitive e-commerce website prototype. <br />Made with the StoreAPI</p>
                     <div class="flex mx-auto gap-4">
@@ -218,7 +218,7 @@
 
             <article class="flex-grow">
                 <a
-                    class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-indigo-500 dark:hover:shadow-gray-300"
+                    class="m-4 grid h-auto max-w-sm mx-auto rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-indigo-500 dark:hover:shadow-gray-300"
                     href="https://dummywe.vercel.app/"
                     target="_blank"
                     rel="noreferer noreferrer"
