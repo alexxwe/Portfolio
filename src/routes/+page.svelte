@@ -13,6 +13,9 @@
         VSCODE: '/images/skills/vscode.svg',
         GITHUB: '/images/skills/github.svg',
         NODEJS: '/images/skills/node.webp',
+        NESTJS: '/images/skills/nestJS.png',
+        NEXTJSLOGO: '/images/skills/nextJSlogo.svg',
+        NEXTJS: '/images/skills/nextJS.svg',
         REACT: '/images/skills/react.svg',
         SASS: '/images/skills/sass.webp',
         TYPESCRIPT: '/images/skills/typescript.webp',
@@ -40,21 +43,25 @@
 </div>
 
 <div class="container mx-auto text-2xl m-10">
-    <div class="flex flex-col md:flex-row justify-between items-center max-w-xl xl:mx-auto md:gap-4">
-        <a href="#Index" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center"
+    <div class="flex flex-col md:flex-row justify-between items-center max-w-4xl xl:mx-auto md:gap-4">
+        <a href="#Index" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-500 dark:hover:bg-indigo-300 my-2 w-32 text-center"
             >Index</a
         >
-        <a href="#Skills" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center"
+        <a href="#Skills" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-500 dark:hover:bg-indigo-300 my-2 w-32 text-center"
             >Skills</a
         >
-        <a href="#About" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center"
+        <a href="#About" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-500 dark:hover:bg-indigo-300 my-2 w-32 text-center"
             >About</a
         >
-        <a href="#Projects" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center"
+        <a href="#Projects" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-500 dark:hover:bg-indigo-300 my-2 w-32 text-center"
             >Projects</a
         >
-        <a href="#Me" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center">Me</a>
-        <a href="#Contact" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-300 dark:hover:bg-indigo-300 my-2 w-32 text-center"
+        <a
+            href="#Contributions"
+            class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-500 dark:hover:bg-indigo-300 my-2 w-42 text-center">Contributions</a
+        >
+        <a href="#Me" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-500 dark:hover:bg-indigo-300 my-2 w-32 text-center">Me</a>
+        <a href="#Contact" class="bg-indigo-400 dark:bg-indigo-500/70 px-2 py-1 rounded-lg hover:bg-indigo-500 dark:hover:bg-indigo-300 my-2 w-32 text-center"
             >Contact</a
         >
     </div>
@@ -162,7 +169,7 @@
     </div>
 </div>
 
-<div id="Projects" class="container mx-auto max-w-7xl p-4">
+<div id="Projects" class="container mx-auto max-w-7xl p-4 xl:h-screen">
     <h2 class="my-4 text-center text-3xl">Projects</h2>
     <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
     <div class="m-4 flex justify-center">
@@ -177,18 +184,14 @@
                     <h1 class="flex justify-center text-4xl">PokeApi</h1>
                     <hr class="m-2 h-0.5 rounded bg-white" />
 
-                    <img
-                        class="flex w-auto h-80 mx-auto rounded-3xl"
-                        src="https://www.henryhiles.com/images/pokeApiThumb.svg"
-                        alt=""
-                    />
+                    <img class="flex w-auto h-80 mx-auto rounded-3xl" src="https://www.henryhiles.com/images/pokeApiThumb.svg" alt="PokeAPI" />
                     <p class="mt-2 text-center">Collect data and features of all Pokémon. Gotta catch'em all. <br />Made with the PokeAPI</p>
                     <div class="flex mx-auto gap-4">
-                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.SVELTE}" alt="Svelte" title="Svelte">
-                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.TYPESCRIPT}" alt="TypeScript" title="TypeScript">
-                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.JS}" alt="JavaScript" title="JavaScript">
-                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.HTML}" alt="HTML" title="HTML">
-                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.CSS}" alt="CSS" title="CSS">
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.SVELTE} alt="Svelte" title="Svelte" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.TYPESCRIPT} alt="TypeScript" title="TypeScript" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.JS} alt="JavaScript" title="JavaScript" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.HTML} alt="HTML" title="HTML" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.CSS} alt="CSS" title="CSS" />
                     </div>
                 </a>
             </article>
@@ -203,15 +206,15 @@
                     <h1 class="flex justify-center text-4xl">StorWe</h1>
                     <hr class="m-2 h-0.5 rounded bg-white" />
 
-                    <img class="flex w-auto h-80 mx-auto" src="https://fakestoreapi.com/icons/logo.png" alt="" />
+                    <img class="flex w-auto h-80 mx-auto" src="https://fakestoreapi.com/icons/logo.png" alt="StoreAPI" />
                     <!-- src="https://www.definicionabc.com/wp-content/uploads/tecnologia/App-Store.jpg" -->
                     <p class="mt-2 text-center">Efficient and intuitive e-commerce website prototype. <br />Made with the StoreAPI</p>
                     <div class="flex mx-auto gap-4">
-                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.SVELTE}" alt="Svelte" title="Svelte">
-                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.TYPESCRIPT}" alt="TypeScript" title="TypeScript">
-                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.JS}" alt="JavaScript" title="JavaScript">
-                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.HTML}" alt="HTML" title="HTML">
-                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.CSS}" alt="CSS" title="CSS">
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.SVELTE} alt="Svelte" title="Svelte" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.TYPESCRIPT} alt="TypeScript" title="TypeScript" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.JS} alt="JavaScript" title="JavaScript" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.HTML} alt="HTML" title="HTML" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.CSS} alt="CSS" title="CSS" />
                     </div>
                 </a>
             </article>
@@ -226,15 +229,15 @@
                     <h1 class="flex justify-center text-4xl">DummyApi</h1>
                     <hr class="m-2 h-0.5 rounded bg-white" />
 
-                    <img class="flex w-auto h-80 justify-center" src="https://fakestoreapi.com/icons/intro.svg" alt="" />
+                    <img class="flex w-auto h-80 justify-center" src="https://fakestoreapi.com/icons/intro.svg" alt="DummyAPI" />
 
                     <p class="mt-2 text-center">Bigger e-commerce website, this time with more products. <br />Made with the DummyAPI</p>
                     <div class="flex mx-auto gap-4">
-                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.SVELTE}" alt="Svelte" title="Svelte">
-                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.TYPESCRIPT}" alt="TypeScript" title="TypeScript">
-                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.JS}" alt="JavaScript" title="JavaScript">
-                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.HTML}" alt="HTML" title="HTML">
-                        <img class="mt-4 w-6 mx-auto" src="{IMAGES.CSS}" alt="CSS" title="CSS">
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.SVELTE} alt="Svelte" title="Svelte" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.TYPESCRIPT} alt="TypeScript" title="TypeScript" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.JS} alt="JavaScript" title="JavaScript" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.HTML} alt="HTML" title="HTML" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.CSS} alt="CSS" title="CSS" />
                     </div>
                 </a>
             </article>
@@ -243,6 +246,59 @@
 
     <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
 </div>
+
+<div id="Contributions" class="container mx-auto max-w-7xl p-4 xl:h-screen">
+    <h2 class="my-4 text-center text-3xl">Contributions</h2>
+    <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
+    <div class="m-4 flex justify-center">
+        <section class="lg:grid lg:grid-cols-2 flex flex-col">
+            <article class="flex-grow">
+                <a
+                    class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-indigo-500 dark:hover:shadow-gray-300"
+                    href="https://hexastats.vercel.app/"
+                    target="_blank"
+                    rel="noreferer noreferrer"
+                >
+                    <h1 class="flex justify-center text-4xl">Hexastats</h1>
+                    <hr class="m-2 h-0.5 rounded bg-white" />
+
+                    <img class="flex w-auto h-80 mx-auto rounded-3xl" src="./images/hexastats.svg" alt="Hexastats" />
+                    <p class="mt-2 text-center">League of Legends stats visualization tool.<br /></p>
+                    <div class="flex mx-auto gap-4">
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.SVELTE} alt="Svelte" title="Svelte" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.TYPESCRIPT} alt="TypeScript" title="TypeScript" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.NEXTJSLOGO} alt="NextJS" title="NextJS" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.NESTJS} alt="NestJS" title="NestJS" />
+                    </div>
+                </a>
+            </article>
+
+            <article class="flex-grow">
+                <a
+                    class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-indigo-500 dark:hover:shadow-gray-300"
+                    href="https://hexakill.vercel.app/"
+                    target="_blank"
+                    rel="noreferer noreferrer"
+                >
+                    <h1 class="flex justify-center text-4xl">Hexakill</h1>
+                    <hr class="m-2 h-0.5 rounded bg-white" />
+
+                    <img class="flex w-auto h-80 mx-auto rounded-3xl" src="./images/hexakill.gif" alt="hexakill" />
+                    <p class="mt-2 text-center">Turn Based RPG game<br />with 3 different Characters</p>
+                    <div class="flex mx-auto gap-4">
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.SVELTE} alt="Svelte" title="Svelte" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.TYPESCRIPT} alt="TypeScript" title="TypeScript" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.JS} alt="JavaScript" title="JavaScript" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.HTML} alt="HTML" title="HTML" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.CSS} alt="CSS" title="CSS" />
+                    </div>
+                </a>
+            </article>
+        </section>
+    </div>
+    <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
+</div>
+
 <div id="Me">
     <MouseMove />
 </div>
