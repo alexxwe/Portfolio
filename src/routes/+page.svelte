@@ -72,7 +72,7 @@
     <hr class="mx-auto h-1 rounded border-0 bg-black dark:bg-white" />
     <div class="grid grid-cols-2 md:flex md:flex-col">
         <div class="flex flex-col items-center">
-            <h1 class="mt-10 text-center text-xl sm:text-2xl">Web Development</h1>
+            <h1 class="mt-10 text-center text-xl sm:text-2xl">Web<br> Development</h1>
             <div
                 class="m-4 flex flex-col items-center md:flex-row md:justify-center gap-10 rounded-full bg-slate-500 px-3 py-5 md:px-10 md:py-3 text-center text-xs"
             >
@@ -184,7 +184,7 @@
                     <h1 class="flex justify-center text-4xl">PokeApi</h1>
                     <hr class="m-2 h-0.5 rounded bg-white" />
 
-                    <img class="flex w-auto h-80 mx-auto rounded-3xl" src="https://www.henryhiles.com/images/pokeApiThumb.svg" alt="PokeAPI" />
+                    <img class="flex w-auto h-80 mx-auto rounded-3xl p-4" src="https://www.henryhiles.com/images/pokeApiThumb.svg" alt="PokeAPI" />
                     <p class="mt-2 text-center">Collect data and features of all Pokémon. Gotta catch'em all. <br />Made with the PokeAPI</p>
                     <div class="flex mx-auto gap-4">
                         <img class="mt-4 w-6 mx-auto" src={IMAGES.SVELTE} alt="Svelte" title="Svelte" />
@@ -206,7 +206,7 @@
                     <h1 class="flex justify-center text-4xl">StorWe</h1>
                     <hr class="m-2 h-0.5 rounded bg-white" />
 
-                    <img class="flex w-auto h-80 mx-auto" src="https://fakestoreapi.com/icons/logo.png" alt="StoreAPI" />
+                    <img class="flex w-auto h-80 mx-auto p-6" src="https://fakestoreapi.com/icons/logo.png" alt="StoreAPI" />
                     <!-- src="https://www.definicionabc.com/wp-content/uploads/tecnologia/App-Store.jpg" -->
                     <p class="mt-2 text-center">Efficient and intuitive e-commerce website prototype. <br />Made with the StoreAPI</p>
                     <div class="flex mx-auto gap-4">
@@ -221,7 +221,7 @@
 
             <article class="flex-grow">
                 <a
-                    class="m-4 grid h-auto max-w-sm mx-auto rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-indigo-500 dark:hover:shadow-gray-300"
+                    class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-indigo-500 dark:hover:shadow-gray-300"
                     href="https://dummywe.vercel.app/"
                     target="_blank"
                     rel="noreferer noreferrer"
@@ -229,7 +229,7 @@
                     <h1 class="flex justify-center text-4xl">DummyApi</h1>
                     <hr class="m-2 h-0.5 rounded bg-white" />
 
-                    <img class="flex w-auto h-80 justify-center" src="https://fakestoreapi.com/icons/intro.svg" alt="DummyAPI" />
+                    <img class="flex w-auto h-80 mx-auto p-2" src="https://fakestoreapi.com/icons/intro.svg" alt="DummyAPI" />
 
                     <p class="mt-2 text-center">Bigger e-commerce website, this time with more products. <br />Made with the DummyAPI</p>
                     <div class="flex mx-auto gap-4">
@@ -262,7 +262,7 @@
                     <h1 class="flex justify-center text-4xl">Hexastats</h1>
                     <hr class="m-2 h-0.5 rounded bg-white" />
 
-                    <img class="flex w-auto h-80 mx-auto rounded-3xl" src="./images/hexastats.svg" alt="Hexastats" />
+                    <img class="flex w-auto h-80 mx-auto rounded-3xl p-2" src="./images/hexastats.svg" alt="Hexastats" />
                     <p class="mt-2 text-center">League of Legends stats visualization tool.<br /></p>
                     <div class="flex mx-auto gap-4">
                         <img class="mt-4 w-6 mx-auto" src={IMAGES.SVELTE} alt="Svelte" title="Svelte" />
@@ -283,7 +283,7 @@
                     <h1 class="flex justify-center text-4xl">Hexakill</h1>
                     <hr class="m-2 h-0.5 rounded bg-white" />
 
-                    <img class="flex w-auto h-80 mx-auto rounded-3xl" src="./images/hexakill.gif" alt="hexakill" />
+                    <img class="flex w-auto h-80 mx-auto rounded-3xl p-8" src="./images/hexakill.gif" alt="hexakill" />
                     <p class="mt-2 text-center">Turn Based RPG game<br />with 3 different Characters</p>
                     <div class="flex mx-auto gap-4">
                         <img class="mt-4 w-6 mx-auto" src={IMAGES.SVELTE} alt="Svelte" title="Svelte" />
