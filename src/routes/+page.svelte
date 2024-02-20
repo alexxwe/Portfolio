@@ -268,7 +268,6 @@
                         <img class="mt-4 w-6 mx-auto" src={IMAGES.SVELTE} alt="Svelte" title="Svelte" />
                         <img class="mt-4 w-6 mx-auto" src={IMAGES.TYPESCRIPT} alt="TypeScript" title="TypeScript" />
                         <img class="mt-4 w-6 mx-auto" src={IMAGES.NEXTJSLOGO} alt="NextJS" title="NextJS" />
-                        <img class="mt-4 w-6 mx-auto" src={IMAGES.NESTJS} alt="NestJS" title="NestJS" />
                     </div>
                 </a>
             </article>
