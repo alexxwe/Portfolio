@@ -19,6 +19,7 @@
         REACT: '/images/skills/react.svg',
         SASS: '/images/skills/sass.webp',
         TYPESCRIPT: '/images/skills/typescript.webp',
+        VITE: '/images/skills/vite.svg',
     }
 </script>
 
@@ -127,7 +128,7 @@
                         <i>NPM</i>
                     </div>
                     <div class="hover:scale-125">
-                        <img src={IMAGES.VSCODE} alt="VSCode logo" class="animate__animated animate__zoomInDown animate__slow w-11" />
+                        <img src={IMAGES.VSCODE} alt="VSCode logo" class="animate__animated animate__zoomInLeft animate__slow w-11" />
                         <i>VSCode</i>
                     </div>
                     <div class="hover:scale-125">
@@ -137,6 +138,10 @@
                     <div class="hover:scale-125">
                         <img src={IMAGES.NODEJS} alt="NodeJS logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
                         <i>NodeJS</i>
+                    </div>
+                    <div class="hover:scale-125">
+                        <img src={IMAGES.VITE} alt="Vite logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
+                        <i>Vite</i>
                     </div>
                 </div>
             </div>
