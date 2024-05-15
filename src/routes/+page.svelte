@@ -20,6 +20,7 @@
         SASS: '/images/skills/sass.webp',
         TYPESCRIPT: '/images/skills/typescript.webp',
         VITE: '/images/skills/vite.svg',
+        JEST: '/images/skills/jest.svg',
     }
 </script>
 
@@ -132,7 +133,7 @@
                         <i>VSCode</i>
                     </div>
                     <div class="hover:scale-125">
-                        <img src={IMAGES.GITHUB} alt="GitHub logo" class="animate__animated animate__zoomInRight animate__slow w-11" />
+                        <img src={IMAGES.GITHUB} alt="GitHub logo" class="animate__animated animate__zoomInUp animate__slow w-11" />
                         <i>GitHub</i>
                     </div>
                     <div class="hover:scale-125">
@@ -142,6 +143,10 @@
                     <div class="hover:scale-125">
                         <img src={IMAGES.VITE} alt="Vite logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
                         <i>Vite</i>
+                    </div>
+                    <div class="hover:scale-125">
+                        <img src={IMAGES.JEST} alt="Jest logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
+                        <i>Jest</i>
                     </div>
                 </div>
             </div>
