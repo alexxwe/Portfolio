@@ -21,6 +21,9 @@
         TYPESCRIPT: '/images/skills/typescript.webp',
         VITE: '/images/skills/vite.svg',
         JEST: '/images/skills/jest.svg',
+        SQL: '/images/skills/sql.svg',
+        MYSQL3: '/images/skills/mysql3.svg',
+        POSTGRESQL: '/images/skills/postgresql.svg',
     }
 </script>
 
@@ -147,6 +150,28 @@
                     <div class="hover:scale-125">
                         <img src={IMAGES.JEST} alt="Jest logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
                         <i>Jest</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-2">
+            <div class="flex flex-col items-center">
+                <h1 class="mt-6 text-center text-xl sm:text-2xl">Database Management</h1>
+                <div
+                    class="m-4 mb-8 flex flex-row items-center md:flex-row md:justify-center gap-10 rounded-full bg-slate-500 px-6 py-6 md:px-10 md:py-3 text-center text-xs"
+                >
+                    <div class="hover:scale-125">
+                        <img src={IMAGES.MYSQL3} alt="MySQL logo" class="animate__animated animate__zoomInLeft animate__slow h-11" />
+                        <i>MySQL</i>
+                    </div>
+                    <div class="hover:scale-125">
+                        <img src={IMAGES.SQL} alt="SQL logo" class="animate__animated animate__zoomIn animate__slow h-11" />
+                        <i>SQL</i>
+                    </div>
+                    <div class="hover:scale-125">
+                        <img src={IMAGES.POSTGRESQL} alt="PostgreSQL logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
+                        <i>PostgreSQL</i>
                     </div>
                 </div>
             </div>
