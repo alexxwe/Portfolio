@@ -257,22 +257,22 @@
             <article class="flex-grow">
                 <a
                     class="m-4 grid h-auto max-w-sm justify-center rounded-lg bg-indigo-500/70 p-4 shadow hover:shadow-lg hover:shadow-indigo-500 dark:hover:shadow-gray-300"
-                    href="https://dummywe.vercel.app/"
+                    href="https://storeact.vercel.app/"
                     target="_blank"
                     rel="noreferer noreferrer"
                 >
-                    <h1 class="flex justify-center text-4xl">DummyApi</h1>
+                    <h1 class="flex justify-center text-4xl">React Shop</h1>
                     <hr class="m-2 h-0.5 rounded bg-white" />
 
-                    <img class="flex w-auto h-80 mx-auto p-2" src="https://fakestoreapi.com/icons/intro.svg" alt="DummyAPI" />
+                    <img class="flex w-auto h-80 mx-auto p-2" src="https://fakestoreapi.com/icons/intro.svg" alt="React Shop" />
 
                     <p class="mt-2 text-center">Bigger e-commerce website, this time with more products. <br />Made with the DummyAPI</p>
                     <div class="flex mx-auto gap-4">
-                        <img class="mt-4 w-6 mx-auto" src={IMAGES.SVELTE} alt="Svelte" title="Svelte" />
-                        <img class="mt-4 w-6 mx-auto" src={IMAGES.TYPESCRIPT} alt="TypeScript" title="TypeScript" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.REACT} alt="React" title="React" />
                         <img class="mt-4 w-6 mx-auto" src={IMAGES.JS} alt="JavaScript" title="JavaScript" />
                         <img class="mt-4 w-6 mx-auto" src={IMAGES.HTML} alt="HTML" title="HTML" />
                         <img class="mt-4 w-6 mx-auto" src={IMAGES.CSS} alt="CSS" title="CSS" />
+                        <img class="mt-4 w-6 mx-auto" src={IMAGES.VITE} alt="Vite" title="Vite" />
                     </div>
                 </a>
             </article>
