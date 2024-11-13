@@ -13,10 +13,11 @@
         VSCODE: '/images/skills/vscode.svg',
         GITHUB: '/images/skills/github.svg',
         NODEJS: '/images/skills/node.webp',
-        NESTJS: '/images/skills/nestJS.png',
+        NESTJS: '/images/skills/nestjs.svg',
         NEXTJSLOGO: '/images/skills/nextJSlogo.svg',
         NEXTJS: '/images/skills/nextJS.svg',
         REACT: '/images/skills/react.svg',
+        ANGULAR: '/images/skills/angular.svg',
         SASS: '/images/skills/sass.webp',
         TYPESCRIPT: '/images/skills/typescript.webp',
         VITE: '/images/skills/vite.svg',
@@ -82,36 +83,44 @@
                 class="m-4 flex flex-col items-center md:flex-row md:justify-center gap-10 rounded-full bg-slate-500 px-3 py-5 md:px-10 md:py-3 text-center text-xs"
             >
                 <div class="hover:scale-125">
-                    <img src={IMAGES.HTML} alt="HTML logo" class="animate__animated animate__zoomInLeft animate__slow" />
+                    <img src={IMAGES.HTML} alt="HTML logo" title="HTML" class="animate__animated animate__zoomInLeft animate__slow" />
                     <i>HTML</i>
                 </div>
                 <div class="hover:scale-125">
-                    <img src={IMAGES.CSS} alt="CSS logo" class="animate__animated animate__zoomInLeft animate__slow" />
+                    <img src={IMAGES.CSS} alt="CSS logo" title="CSS"  class="animate__animated animate__zoomInLeft animate__slow" />
                     <i>CSS</i>
                 </div>
                 <div class="hover:scale-125">
-                    <img src={IMAGES.JS} alt="JavaScript logo" class="animate__animated animate__zoomInLeft animate__slow" />
+                    <img src={IMAGES.JS} alt="JavaScript logo" title="JavaScript" class="animate__animated animate__zoomInLeft animate__slow" />
                     <i>JS</i>
                 </div>
                 <div class="hover:scale-125">
-                    <img src={IMAGES.TYPESCRIPT} alt="TypeScript logo" class=" animate__animated animate__zoomInLeft animate__slow w-11" />
+                    <img src={IMAGES.TYPESCRIPT} alt="TypeScript logo" title="TypeScript" class=" animate__animated animate__zoomInLeft animate__slow w-11" />
                     <i>TS</i>
+                </div>
+                <div class="hover:scale-125">
+                    <img src={IMAGES.SVELTE}  alt="Svelte logo" title="Svelte" class="animate__animated animate__zoomIn animate__slow w-11"  />
+                    <i>Svelte</i>
                 </div>
 
                 <div class="hover:scale-125">
-                    <img class="animate__animated animate__zoomInRight animate__slow w-11" src={IMAGES.SVELTE} alt="Svelte logo" />
-                    <i>Svelte</i>
-                </div>
-                <div class="hover:scale-125">
-                    <img src={IMAGES.REACT} alt="React logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
+                    <img src={IMAGES.REACT} alt="React logo" title="React" class="animate__animated animate__zoomIn animate__slow h-11" />
                     <i>React</i>
                 </div>
                 <div class="hover:scale-125">
-                    <img src={IMAGES.TAILWINDCSS} alt="TailwindCSS logo" class="mx-auto animate__animated animate__zoomInRight animate__slow w-11" />
+                    <img src={IMAGES.ANGULAR} alt="Angular logo" title="Angular" class="animate__animated animate__zoomIn animate__slow h-11" />
+                    <i>Angular</i>
+                </div>
+                <div class="hover:scale-125">
+                    <img src={IMAGES.NESTJS} alt="NestJS logo" title="NestJS" class="animate__animated animate__zoomInRight animate__slow h-11" />
+                    <i>NestJS</i>
+                </div>
+                <div class="hover:scale-125">
+                    <img src={IMAGES.TAILWINDCSS} alt="TailwindCSS logo" title="TailwindCSS" class="mx-auto animate__animated animate__zoomInRight animate__slow w-11" />
                     <i>TailwindCSS</i>
                 </div>
                 <div class="hover:scale-125">
-                    <img src={IMAGES.SASS} alt="SASS logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
+                    <img src={IMAGES.SASS} alt="SASS logo" title="SASS" class="animate__animated animate__zoomInRight animate__slow h-11" />
                     <i>SASS</i>
                 </div>
             </div>
@@ -123,32 +132,32 @@
                     class="m-4 mb-8 flex flex-col items-center md:flex-row md:justify-center gap-10 rounded-full bg-slate-500 px-3 py-6 md:px-10 md:py-3 text-center text-xs"
                 >
                     <div class="hover:scale-125">
-                        <img src={IMAGES.GIT} alt="Git logo" class="animate__animated animate__zoomInLeft animate__slow" />
+                        <img src={IMAGES.GIT} alt="Git logo" title="Git" class="animate__animated animate__zoomInLeft animate__slow" />
                         <i>Git</i>
                     </div>
 
                     <div class="hover:scale-125">
-                        <img src={IMAGES.NPM} alt="NPM logo" class="animate__animated animate__zoomInLeft animate__slow" />
+                        <img src={IMAGES.NPM} alt="NPM logo" title="NPM" class="animate__animated animate__zoomInLeft animate__slow" />
                         <i>NPM</i>
                     </div>
                     <div class="hover:scale-125">
-                        <img src={IMAGES.VSCODE} alt="VSCode logo" class="animate__animated animate__zoomInLeft animate__slow w-11" />
+                        <img src={IMAGES.VSCODE} alt="VSCode logo" title="VSCode" class="animate__animated animate__zoomInLeft animate__slow w-11" />
                         <i>VSCode</i>
                     </div>
                     <div class="hover:scale-125">
-                        <img src={IMAGES.GITHUB} alt="GitHub logo" class="animate__animated animate__zoomInUp animate__slow w-11" />
+                        <img src={IMAGES.GITHUB} alt="GitHub logo" title="GitHub" class="animate__animated animate__zoomInUp animate__slow w-11" />
                         <i>GitHub</i>
                     </div>
                     <div class="hover:scale-125">
-                        <img src={IMAGES.NODEJS} alt="NodeJS logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
+                        <img src={IMAGES.NODEJS} alt="NodeJS logo" title="NodeJS" class="animate__animated animate__zoomInRight animate__slow h-11" />
                         <i>NodeJS</i>
                     </div>
                     <div class="hover:scale-125">
-                        <img src={IMAGES.VITE} alt="Vite logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
+                        <img src={IMAGES.VITE} alt="Vite logo" title="Vite" class="animate__animated animate__zoomInRight animate__slow h-11" />
                         <i>Vite</i>
                     </div>
                     <div class="hover:scale-125">
-                        <img src={IMAGES.JEST} alt="Jest logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
+                        <img src={IMAGES.JEST} alt="Jest logo" title="Jest" class="animate__animated animate__zoomInRight animate__slow h-11" />
                         <i>Jest</i>
                     </div>
                 </div>
@@ -162,15 +171,15 @@
                     class="m-4 mb-8 flex flex-row items-center md:flex-row md:justify-center gap-10 rounded-full bg-slate-500 px-6 py-6 md:px-10 md:py-3 text-center text-xs"
                 >
                     <div class="hover:scale-125">
-                        <img src={IMAGES.MYSQL3} alt="MySQL logo" class="animate__animated animate__zoomInLeft animate__slow h-11" />
+                        <img src={IMAGES.MYSQL3} alt="MySQL logo" title="MySQL" class="animate__animated animate__zoomInLeft animate__slow h-11" />
                         <i>MySQL</i>
                     </div>
                     <div class="hover:scale-125">
-                        <img src={IMAGES.SQL} alt="SQL logo" class="animate__animated animate__zoomIn animate__slow h-11" />
+                        <img src={IMAGES.SQL} alt="SQL logo" title="SQL" class="animate__animated animate__zoomIn animate__slow h-11" />
                         <i>SQL</i>
                     </div>
                     <div class="hover:scale-125">
-                        <img src={IMAGES.POSTGRESQL} alt="PostgreSQL logo" class="animate__animated animate__zoomInRight animate__slow h-11" />
+                        <img src={IMAGES.POSTGRESQL} alt="PostgreSQL logo" title="PostgreSQL" class="animate__animated animate__zoomInRight animate__slow h-11" />
                         <i>PostgreSQL</i>
                     </div>
                 </div>
